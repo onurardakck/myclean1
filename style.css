@@ -987,3 +987,46 @@ a:active {
     color: #205B82; /* Dunkleres Blau beim Hover und Aktivieren */
     text-decoration: underline;
 }
+
+/* Impressum Seite */
+.impressum-container {
+    margin-left: 80px; /* Erhöhter Abstand links */
+    margin-right: 40px; /* Abstand rechts hinzugefügt */
+    padding-left: 80px;  /* Optionale zusätzliche Polsterung links */
+    padding-right: 20px; /* Beibehaltung der Polsterung rechts */
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1rem; /* Textgröße auf Standard setzen */
+}
+
+/* Optional: Überschriftenanpassung */
+.impressum-container h1, .impressum-container h2 {
+    color: #1A68A2; /* Hauptblau */
+}
+
+.impressum-container p {
+    margin-bottom: 20px; /* Erhöhter Abstand zwischen den Absätzen */
+    font-size: 1rem; /* Gleiche Schriftgröße wie der obige Text */
+}
+
+/* Datenschutz Seite */
+.datenschutz-container {
+    margin-top: 50px;
+    margin-left: 40px; /* Erhöhter Abstand links */
+    margin-right: 40px; /* Abstand rechts hinzugefügt */
+    padding-left: 20px;  /* Optionale zusätzliche Polsterung links */
+    padding-right: 20px; /* Beibehaltung der Polsterung rechts */
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1rem; /* Textgröße auf Standard setzen */
+}
+
+/* Optional: Überschriftenanpassung */
+.datenschutz-container h1, .datenschutz-container h2 {
+    color: #1A68A2; /* Hauptblau */
+}
+
+.datenschutz-container p {
+    margin-bottom: 20px; /* Erhöhter Abstand zwischen den Absätzen */
+    font-size: 1rem; /* Gleiche Schriftgröße wie der obige Text */
+}
