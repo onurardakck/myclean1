@@ -235,6 +235,7 @@ footer {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 0px;
 }
 
 .hero-video {
@@ -245,6 +246,18 @@ footer {
     height: 100%;
     object-fit: cover;
     z-index: -2;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-bottom: 0px
+
 }
 
 .hero-overlay {
@@ -442,10 +455,6 @@ footer {
     align-items: stretch;
     width: 100%;
     gap: 0;
-}
-
-.about-image {
-    flex: 1;
 }
 
 .about-image img {
@@ -883,6 +892,18 @@ body {
 }
 
 /* Mobile-Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Kleinere Höhe auf mobilen Geräten */
+    }
+
+    .about-image img, .service-image img, .news-image img {
+        object-fit: cover;
+        width: 100%;
+        height: auto; /* Stellt sicher, dass das Bild seine Proportionen beibehält */
+    }
+}
+
 @media (max-width: 768px) {
     .top-bar {
         display: none; /* Verstecke die obere Kontaktleiste auf mobilen Geräten */
