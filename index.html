@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
+    <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
+    <meta name="author" content="MyClean-Service">
+    <title>MyClean-Service</title>
+    <!-- Google Fonts - Arimo -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<!-- Header -->
+<header class="header">
+    <!-- Oberer Teil mit Kontaktinformationen -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="mobile-icons">
+                <a href="https://maps.google.com/?q=Wollankstr+61c,+13359+Berlin">
+                    <img src="standort.png" alt="Standort" class="icon">
+                </a>
+                <a href="mailto:info@myclean-service.de">
+                    <img src="mail.png" alt="Mail" class="icon">
+                </a>
+                <a href="tel:+4915217782301">
+                    <img src="anruf.png" alt="Anruf" class="icon">
+                </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <span onclick="openMenu()">☰</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vollbild-Navigationsmenü -->
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="#">Leistungen</a>
+                <ul class="submenu">
+                    <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
+                    <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
+                    <li><a href="baureinigung.html">Baureinigung</a></li>
+                    <li><a href="grundreinigung.html">Grundreinigung</a></li>
+                    <li><a href="bueroreinigung.html">Büroreinigung</a></li>
+                    <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
+                    <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
+                    <li><a href="winterdienst.html">Winterdienst</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <!-- JavaScript -->
+        <script>
+            function openMenu() {
+                document.getElementById("mobile-nav").classList.add("open");
+            }
+    
+            function closeMenu() {
+                document.getElementById("mobile-nav").classList.remove("open");
+            }
+        </script>
+    </body>
+    
+    </html>
+
+    <!-- Vollbild-Navigationsmenü -->
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="#">Leistungen</a>
+                <ul class="submenu">
+                    <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
+                    <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
+                    <li><a href="baureinigung.html">Baureinigung</a></li>
+                    <li><a href="grundreinigung.html">Grundreinigung</a></li>
+                    <li><a href="bueroreinigung.html">Büroreinigung</a></li>
+                    <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
+                    <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
+                    <li><a href="winterdienst.html">Winterdienst</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted playsinline class="hero-video" id="heroVideo">
+        <source src="reinigung.mp4" type="video/mp4">
+
+        Ihr Browser unterstützt keine Videos.
+    </video>
+    <div class="hero-overlay">
+        <div class="hero-container">
+            <h1>Sprechen Sie uns an, wir beraten Sie umfassend!</h1>
+            <p>Allgemeine Anfragen und Angebote:</p>
+            <p class="hero-phone"><span>Telefon: +49 152 17782301</span></p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const video = document.getElementById('heroVideo');
+    video.addEventListener('ended', function() {
+        video.pause(); // Hält das Video an, wenn es das Ende erreicht
+        video.currentTime = video.duration; // Setzt das Video auf das letzte Bild
+    });
+</script>
+
+<!-- Über uns Section -->
+<section class="about-section">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="reinigung1.png" alt="Unsere Aufgabe">
+        </div>
+        <div class="about-text">
+            <h2>Unsere Aufgabe</h2>
+            <p>
+                Von unserem ersten Treffen bis zum Abschluss Ihres Projekts ist es unser Versprechen und Ziel, die Bedürfnisse und Erwartungen unserer Kunden zu erfüllen.
+            </p>
+            <a href="about.html" class="about-button">Über Uns</a>
+        </div>
+    </div>
+</section>
+
+<!-- Dritter Abschnitt -->
+<section class="services">
+    <div class="service-item">
+        <div class="service-image">
+            <a href="gebaeudereinigung.html">
+                <img src="1.png" alt="Gebäudereinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="gebaeudereinigung.html">Gebäudereinigung</a></h3>
+            <p>Umfassende Reinigungsdienste für Ihr Gebäude, angepasst an Ihre Bedürfnisse.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-image">
+            <a href="fensterreinigung.html">
+                <img src="2.png" alt="Fensterreinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="fensterreinigung.html">Fensterreinigung</a></h3>
+            <p>Streifenfreie Fensterreinigung für einen klaren Durchblick.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-image">
+            <a href="baureinigung.html">
+                <img src="3.png" alt="Baureinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="baureinigung.html">Baureinigung</a></h3>
+            <p>Baureinigung, Bauendreinigung und Zwischenreinigung für Ihre Baustellen.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-image">
+            <a href="grundreinigung.html">
+                <img src="4.png" alt="Grundreinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="grundreinigung.html">Grundreinigung</a></h3>
+            <p>Tiefenreinigung für Ihre Räumlichkeiten, um den höchsten Standard zu gewährleisten.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-image">
+            <a href="bueroreinigung.html">
+                <img src="5.png" alt="Büroreinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="bueroreinigung.html">Büroreinigung</a></h3>
+            <p>Professionelle Reinigungslösungen für Ihr Büro, damit Sie sich auf das Wesentliche konzentrieren können.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-image">
+            <a href="praxisreinigung.html">
+                <img src="6.png" alt="Praxisreinigung">
+            </a>
+        </div>
+        <div class="service-text">
+            <h3><a href="praxisreinigung.html">Praxisreinigung</a></h3>
+            <p>Reinigungslösungen speziell für Praxen, um Hygiene und Sauberkeit sicherzustellen.</p>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="news-section">
+    <div class="news-item">
+        <div class="news-content">
+            <h3>Neue Dienstleistungen: Sperrmüllentsorgung und Winterdienst</h3>
+            <p>Wir freuen uns, Ihnen mitteilen zu können, dass wir ab sofort auch die Sperrmüllentsorgung und den Winterdienst anbieten. Damit erweitern wir unser Serviceportfolio und können noch besser auf Ihre Bedürfnisse eingehen.</p>
+            <a href="#" class="read-more">Mehr lesen</a>
+        </div>
+        <div class="news-image">
+            <img src="winterdienstsperrmüll.png" alt="Sperrmüllentsorgung und Winterdienst">
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-section">
+    <div class="blog-item left">
+        <div class="blog-content">
+            <h2>Tipps zur effizienten Gebäudereinigung</h2>
+            <p class="teaser">Effektive Reinigung beginnt mit einer guten Planung...</p>
+            <div class="full-content">
+                <p>...und der Verwendung der richtigen Werkzeuge und Reinigungsmittel. In diesem Blog erfahren Sie, wie Sie Ihre Reinigungsprozesse optimieren können...</p>
+            </div>
+            <button class="toggle-button">Bald mehr dazu</button>
+        </div>
+    </div>
+    <div class="blog-item right">
+        <div class="blog-content">
+            <h2>Warum regelmäßige Reinigungen so wichtig sind</h2>
+            <p class="teaser">Regelmäßige Reinigungen tragen nicht nur zur Hygiene bei...</p>
+            <div class="full-content">
+                <p>...sondern verlängern auch die Lebensdauer Ihrer Einrichtung und Geräte. Lesen Sie weiter, um mehr zu erfahren...</p>
+            </div>
+            <button class="toggle-button">Bald mehr dazu</button>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt Section -->
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-form-box">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
+            <form action="send_mail.php" method="post">
+                <input type="text" name="name" placeholder="Ihr Name" required>
+                <input type="email" name="email" placeholder="Ihre E-Mail" required>
+                <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
+                <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                <div class="consent-container">
+                    <input type="checkbox" name="privacy" required>
+                    <label>Ich habe die Datenschutzerklärung gelesen und willige ein.</label>
+                </div>
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <div class="contact-info">
+                <div class="contact-info-left">
+                    <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
+                    <p><strong>Telefon:</strong> +49 152 17782301</p>
+                    <p><strong>E-Mail:</strong> info@myclean-service.de</p>
+                </div>
+                <div class="contact-info-right">
+                    <p><strong>Öffnungszeiten:</strong><br>Mo - Fr: 8:00 - 18:00<br>Sa: 9:00 - 14:00</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <img src="mycleanlogo.png" alt="Logo" class="logo">
+        <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+        </div>
+    </div>
+    <div class="gray-space"></div>
+</footer>
+
+</body>
+</html>
