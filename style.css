@@ -86,12 +86,13 @@ footer {
     height: 24px;
 }
 
-.contact-info span {
-    margin-right: 20px;
+.contact-info span,
+.contact-info a {
+    color: #ffffff !important;
 }
 
 .contact-link {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
 }
 
