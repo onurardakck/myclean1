@@ -896,6 +896,11 @@ body {
     display: none;
 }
 
+/* Desktop-Menü bleibt sichtbar bei größeren Bildschirmen */
+.menu {
+    display: flex; /* Zeige Desktop-Menü in der Desktop-Version */
+}
+
 /* Mobile-Styles */
 @media (max-width: 768px) {
     .hero {
@@ -974,84 +979,15 @@ body {
     }
 }
 
-    /* Hamburger-Menü mit größeren Abständen oben und unten */
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        color: #1A68A2;
-    }
+/* Standardmäßige Desktop-Ansicht: Verstecke das Hamburger-Menü */
+.menu-toggle {
+    display: none;
+}
 
-    /* Verstecke das Desktop-Menü in der mobilen Ansicht */
-    .menu {
-        display: none;
-    }
-
-    /* Mobile Navigationsmenü */
-    .mobile-nav {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #1A68A2;
-        z-index: 999;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s ease;
-    }
-
-    .mobile-nav.show {
-        display: flex;
-    }
-
-    .mobile-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        color: #fff;
-    }
-
-    .mobile-menu li {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .mobile-menu li a {
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-    }
-
-    .submenu {
-        display: none;
-        background-color: #205B82;
-    }
-
-    .mobile-menu li.open > .submenu {
-        display: block; /* Untermenü anzeigen */
-    }
-
-    .mobile-nav::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 998;
-    }
-
-    .close-btn {
-        font-size: 2rem;
-        color: white;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
+/* Desktop-Menü bleibt sichtbar bei größeren Bildschirmen */
+.menu {
+    display: flex; /* Zeige Desktop-Menü in der Desktop-Version */
+}
 
 /* Stil für alle Links in der Service-Section */
 .service-text a:link,
