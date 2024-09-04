@@ -91,18 +91,19 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
+
+    <!-- JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const mobileNav = document.getElementById('mobile-nav');
-            const submenuLinks = document.querySelectorAll('.mobile-menu li a');
             const mobileMenuItems = document.querySelectorAll('.mobile-menu > li');
-            
+
             // Öffnen und Schließen des Hamburger-Menüs
             menuToggle.addEventListener('click', function() {
                 mobileNav.classList.toggle('show');
             });
-    
+
             // Funktion, um das Untermenü zu öffnen und zu schließen
             mobileMenuItems.forEach(function(item) {
                 item.addEventListener('click', function(event) {
@@ -115,7 +116,7 @@
                     }
                 });
             });
-    
+
             // Funktion, um das Menü zu schließen, wenn außerhalb geklickt wird
             mobileNav.addEventListener('click', function(event) {
                 if (event.target === mobileNav) {
@@ -124,7 +125,10 @@
             });
         });
     </script>
-    
+</body>
+
+</html>
+
 <!-- Hero Section -->
 <section class="hero">
     <video autoplay muted playsinline class="hero-video" id="heroVideo">
