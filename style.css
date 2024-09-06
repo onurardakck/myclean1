@@ -86,13 +86,12 @@ footer {
     height: 24px;
 }
 
-.contact-info span,
-.contact-info a {
-    color: #ffffff !important;
+.contact-info span {
+    margin-right: 20px;
 }
 
 .contact-link {
-    color: #ffffff !important;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -235,7 +234,6 @@ footer {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 0px;
 }
 
 .hero-video {
@@ -246,18 +244,6 @@ footer {
     height: 100%;
     object-fit: cover;
     z-index: -2;
-}
-
-.hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    margin-bottom: 0px
-
 }
 
 .hero-overlay {
@@ -455,6 +441,10 @@ footer {
     align-items: stretch;
     width: 100%;
     gap: 0;
+}
+
+.about-image {
+    flex: 1;
 }
 
 .about-image img {
@@ -767,15 +757,6 @@ footer {
     margin: 0 20px;
 }
 
-.contact-link {
-    color: #1A68A2 !important; /* Setzt die Farbe für den Telefonnummer-Link auf Blau */
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
 /* FAQ Section */
 .faq-section {
     padding: 50px 40px;
@@ -857,145 +838,151 @@ footer .gray-space {
     height: 40px;
 }
 
-/* Desktop-Styles (Aktuelle Styles beibehalten) */
-body {
-    font-family: 'Arimo', sans-serif;
-    color: #333;
-    background-color: #ffffff;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu li a {
-    color: #205B82;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.submenu {
-    list-style: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    display: none;
-    padding: 10px 0;
-}
-
-.menu li:hover .submenu {
-    display: block;
-}
-
-/* Standardmäßige Desktop-Ansicht: Verstecke das Hamburger-Menü */
-.menu-toggle {
-    display: none;
-}
-
-/* Desktop-Menü bleibt sichtbar bei größeren Bildschirmen */
-.menu {
-    display: flex; /* Zeige Desktop-Menü in der Desktop-Version */
-}
-
-/* Mobile-Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    .hero {
-        height: 50vh; /* Kleinere Höhe auf mobilen Geräten */
-    }
 
-    .about-image img, .service-image img, .news-image img {
-        object-fit: cover;
-        width: 100%;
-        height: auto; /* Stellt sicher, dass das Bild seine Proportionen beibehält */
-    }
-}
-
-@media (max-width: 768px) {
-    .top-bar {
-        display: none; /* Verstecke die obere Kontaktleiste auf mobilen Geräten */
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .top-bar .container {
+        flex-direction: column;
+        gap: 10px;
         padding: 10px;
     }
 
-    .menu {
-        display: none; /* Verstecke das Menü standardmäßig */
+    .header-container {
         flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #1A68A2;
-        z-index: 1000;
+        text-align: center;
+        padding: 10px;
     }
 
-    .menu.show {
-        display: flex;
+    .header-left .logo {
+        margin: 0 auto;
+        max-height: 70px;
     }
 
-    .menu li {
+    .header-right nav {
+        margin-right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-call {
+        margin-top: 15px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+
+    .image-content {
+        padding: 10px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .service-text {
+        padding: 20px;
+    }
+
+    .blog-section {
+        flex-direction: column;
+    }
+
+    .blog-item {
+        padding: 30px 20px;
+    }
+
+    .blog-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .news-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .news-content {
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .news-video {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form-box,
+    .contact-details {
+        width: 100%;
+    }
+
+    .contact-form-box form button {
+        width: 100%;
+    }
+
+    .contact-container::before {
+        display: none;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 
     .menu li a {
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
+        font-size: 1rem;
     }
-
-    .submenu {
-        position: static;
-        padding: 0;
-    }
-
-    .submenu li {
-        background-color: #205B82;
-    }
-
-    .submenu li a {
-        color: white;
-        padding: 10px 20px;
-        display: block;
-    }
-
-    .menu-toggle {
-        font-size: 2rem;
-        color: #1A68A2;
-        cursor: pointer;
-    }
-
-    .header-left img {
-        max-width: 100px;
-    }
-}
-
-/* Standardmäßige Desktop-Ansicht: Verstecke das Hamburger-Menü */
-.menu-toggle {
-    display: none;
-}
-
-/* Desktop-Menü bleibt sichtbar bei größeren Bildschirmen */
-.menu {
-    display: flex; /* Zeige Desktop-Menü in der Desktop-Version */
 }
 
 /* Stil für alle Links in der Service-Section */
@@ -1022,47 +1009,4 @@ a:hover,
 a:active {
     color: #205B82; /* Dunkleres Blau beim Hover und Aktivieren */
     text-decoration: underline;
-}
-
-/* Impressum Seite */
-.impressum-container {
-    margin-left: 80px; /* Erhöhter Abstand links */
-    margin-right: 40px; /* Abstand rechts hinzugefügt */
-    padding-left: 80px;  /* Optionale zusätzliche Polsterung links */
-    padding-right: 20px; /* Beibehaltung der Polsterung rechts */
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 1rem; /* Textgröße auf Standard setzen */
-}
-
-/* Optional: Überschriftenanpassung */
-.impressum-container h1, .impressum-container h2 {
-    color: #1A68A2; /* Hauptblau */
-}
-
-.impressum-container p {
-    margin-bottom: 20px; /* Erhöhter Abstand zwischen den Absätzen */
-    font-size: 1rem; /* Gleiche Schriftgröße wie der obige Text */
-}
-
-/* Datenschutz Seite */
-.datenschutz-container {
-    margin-top: 50px;
-    margin-left: 40px; /* Erhöhter Abstand links */
-    margin-right: 40px; /* Abstand rechts hinzugefügt */
-    padding-left: 20px;  /* Optionale zusätzliche Polsterung links */
-    padding-right: 20px; /* Beibehaltung der Polsterung rechts */
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 1rem; /* Textgröße auf Standard setzen */
-}
-
-/* Optional: Überschriftenanpassung */
-.datenschutz-container h1, .datenschutz-container h2 {
-    color: #1A68A2; /* Hauptblau */
-}
-
-.datenschutz-container p {
-    margin-bottom: 20px; /* Erhöhter Abstand zwischen den Absätzen */
-    font-size: 1rem; /* Gleiche Schriftgröße wie der obige Text */
 }
