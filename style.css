@@ -767,6 +767,15 @@ footer {
     margin: 0 20px;
 }
 
+.contact-link {
+    color: #1A68A2 !important; /* Setzt die Farbe für den Telefonnummer-Link auf Blau */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
 /* FAQ Section */
 .faq-section {
     padding: 50px 40px;
