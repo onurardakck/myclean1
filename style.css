@@ -10,54 +10,11 @@ body {
     font-family: 'Arimo', sans-serif;
     color: #333;
     background-color: #ffffff;
-    overflow-x: hidden;
 }
 
-/* Global Styles */
-section {
-    margin-bottom: 50px; /* Fügt 50px Abstand unterhalb jeder Section hinzu */
-}
-
-/* Beispiel für eine individuelle Section-Anpassung */
-.hero {
-    margin-bottom: 0px; /* Individueller Abstand für die Hero-Section */
-}
-
-.content-section {
-    margin-bottom: 140px; /* Individueller Abstand für die Content-Section */
-}
-
-.services {
-    margin-bottom: 80px; /* Individueller Abstand für die Services-Section */
-}
-
-.about-section {
-    margin-bottom: 80px; /* Individueller Abstand für die About-Section */
-}
-
-.blog-section {
-    margin-bottom: 70px; /* Individueller Abstand für die Blog-Section */
-}
-
-.news-section {
-    margin-bottom: 70px; /* Individueller Abstand für die News-Section */
-}
-
-.contact-section {
-    margin-bottom: 70px; /* Individueller Abstand für die Kontakt-Section */
-}
-
-.faq-section {
-    margin-bottom: 70px; /* Individueller Abstand für die FAQ-Section */
-}
-
-footer {
-    margin-top: 70px; /* Fügt 70px Abstand oberhalb des Footers hinzu */
-}
-
-/* Top Bar Styles */
+/* Topbar Styles */
 .top-bar {
-    background-color: #1A68A2; /* Hauptblau */
+    background-color: #1A68A2;
     color: #ffffff;
     padding: 20px 0;
     width: 100%;
@@ -88,29 +45,12 @@ footer {
 
 .contact-info span,
 .contact-info a {
-    color: #ffffff !important;
-}
-
-.contact-link {
-    color: #ffffff !important;
+    color: #ffffff !important; /* Weiß für Topbar-Links */
     text-decoration: none;
 }
 
-.contact-link:hover {
+.contact-info a:hover {
     text-decoration: underline;
-}
-
-.social-media a {
-    margin-left: 15px;
-}
-
-.social-media a img {
-    width: 24px;
-    height: 24px;
-}
-
-.social-media a:hover img {
-    opacity: 0.8;
 }
 
 /* Header Styles */
@@ -649,7 +589,7 @@ footer {
     background-color: #AECEE4; /* Hellblau */
 }
 
-/* Kontakt Section */
+/* Kontakt-Section Styles */
 .contact-section {
     padding: 40px;
     background-color: #ffffff;
@@ -663,7 +603,7 @@ footer {
     justify-content: space-between;
     align-items: stretch;
     gap: 30px;
-    margin-left: -65px; /* Verschiebt die Boxen nach links */
+    margin-left: -65px;
 }
 
 .contact-form-box,
@@ -701,7 +641,6 @@ footer {
 }
 
 .contact-form-box form button {
-    width: auto; /* Macht den Button so breit wie der Text */
     background-color: #1A68A2; /* Hauptblau */
     color: white;
     font-size: 1rem;
@@ -712,44 +651,25 @@ footer {
     margin-top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
-    align-self: flex-start; /* Macht den Button linksbündig */
+    align-self: flex-start;
 }
 
 .contact-form-box form button:hover {
     background-color: #205B82; /* Dunkleres Blau */
 }
 
-.consent-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-left: -780px; /* Keine Abweichung nach rechts */
+/* Telefonnummer in der Topbar - Weiß */
+.top-bar .contact-link {
+    color: #ffffff !important; /* Weiß für die Topbar-Telefonnummer */
 }
 
-.consent-container input[type="checkbox"] {
-    margin-right: -790px;
-    transform: translateY(7px); /* Justiere die vertikale Position des Kästchens, um es auf eine Linie mit dem Text zu bringen */
+/* Telefonnummer in der Kontakt-Section - Blau */
+.contact-section .contact-link {
+    color: #1A68A2 !important; /* Blau für die Kontakt-Section */
 }
 
-.consent-container label {
-    font-size: 0.9rem;
-    color: #1A68A2;
-    line-height: 1; /* Verhindert zusätzlichen vertikalen Abstand */
-}
-
-.contact-form-box form button {
-    background-color: #1A68A2;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 10px 30px; /* Verkleinert die Breite des Buttons */
-    margin-top: 20px; /* Abstand zum vorherigen Element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    width: auto; /* Verhindert, dass der Button die volle Breite einnimmt */
-    align-self: flex-start; /* Positioniert den Button linksbündig */
+.contact-section .contact-link:hover {
+    text-decoration: underline;
 }
 
 .map-container {
@@ -766,16 +686,6 @@ footer {
     background-color: #ddd;
     margin: 0 20px;
 }
-
-.contact-link {
-    color: #1A68A2 !important; /* Setzt die Farbe für den Telefonnummer-Link auf Blau */
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
 /* FAQ Section */
 .faq-section {
     padding: 50px 40px;
