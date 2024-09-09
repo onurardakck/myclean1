@@ -13,11 +13,15 @@ body {
     overflow-x: hidden; /* Keine Seitenscroller */
 }
 
+<<<<<<< HEAD
 /* Global Section Spacing */
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 section {
     margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
 .hero {
     margin-bottom: 0px;
 }
@@ -28,6 +32,129 @@ section {
 
 footer {
     margin-top: 70px;
+=======
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(26, 104, 162, 0.5) 50%, transparent 100%); /* Hauptblau */
+    clip-path: ellipse(150% 100% at 50% 0%);
+    z-index: -1;
+}
+
+.hero h1, .hero p, .hero-button {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgba(37, 99, 235, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    z-index: 10; /* Stellt sicher, dass der Button im Vordergrund bleibt */
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 5; /* Stellt sicher, dass der Button über dem Overlay ist */
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Desktop Styles für die Hero-Section */
+@media (min-width: 769px) {
+    .hero {
+        height: 100vh; /* Volle Bildschirmhöhe für Desktop */
+    }
+
+    .hero h1 {
+        font-size: 4.5rem; /* Größerer Text für Desktop */
+    }
+
+    .hero p {
+        font-size: 2rem; /* Größerer Text für Desktop */
+    }
+
+    .hero-button {
+        font-size: 1.8rem; /* Größerer Button für Desktop */
+        padding: 20px 40px; /* Größere Polsterung für den Button */
+        margin-top: 40px; /* Mehr Abstand zum Text */
+    }
+}
+
+/* Mobile Styles für die Hero-Section */
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh; /* Kleinere Höhe für mobile Geräte */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    .hero-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 }
 
 /* Top Bar Styles */
@@ -126,28 +253,87 @@ footer {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* Hero Section */
 .hero {
     position: relative;
     width: 100%;
     height: 75vh;
+=======
+/* Dropdown Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px 0;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    color: #205B82;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* About Section */
+.about-section {
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    z-index: 10;
+    position: relative;
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
 }
 
+<<<<<<< HEAD
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -212,46 +398,60 @@ footer {
 }
 
 .text-content {
+=======
+.about-text {
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     flex: 1;
-    padding-left: 20px;
-}
-
-.text-content h2 {
-    font-size: 2.5rem;
+    background-color: #ffffff;
     color: #1A68A2;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.text-content p {
+.about-text h2 {
+    font-size: 2.5rem;
+<<<<<<< HEAD
+    color: #1A68A2;
+=======
+    font-weight: bold;
+>>>>>>> 0e4d94d (Updated index.html and style.css)
+}
+
+.about-text p {
     font-size: 1.2rem;
-    color: #555;
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 1.6;
 }
 
+<<<<<<< HEAD
 .buttons .button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #1A68A2;
     color: #ffffff;
     border-radius: 15px;
+=======
+.about-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #1A68A2;
+    color: #ffffff !important;
+    border-radius: 30px;
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: transform 0.3s ease;
+    align-self: flex-start;
 }
 
-.buttons .button:hover {
-    transform: scale(1.1);
-}
-
-.image-content {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.image-content img {
-    max-width: 100%;
-    border-radius: 10px;
+.about-button:hover {
+    background-color: #205B82;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
 }
 
 /* Services Section */
@@ -284,6 +484,13 @@ footer {
 .service-text {
     background-color: #ffffff;
     color: #1A68A2;
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     padding: 30px;
     text-align: center;
     height: 150px;
@@ -308,6 +515,7 @@ footer {
     display: block;
 }
 
+<<<<<<< HEAD
 /* About Section */
 .about-section {
     display: flex;
@@ -443,11 +651,33 @@ footer {
 }
 
 /* News Section */
+=======
+/* Stil für Links in der Services Section */
+.services .service-text a {
+    color: #1A68A2; /* Dunkleres Blau passend zur Webseite */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services .service-text a:hover {
+    color: #205B82; /* Etwas dunkler beim Hover */
+    text-decoration: underline;
+}
+
+/* Styling für die News-Section */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 .news-section {
-    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
     background-color: #ffffff;
+<<<<<<< HEAD
     color: #1A68A2;
     font-family: 'Arimo', sans-serif;
+=======
+    color: #1A68A2; /* Hauptblau */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
@@ -459,48 +689,59 @@ footer {
 
 .news-item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    text-align: left;
     flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .news-content {
-    width: 50%;
+    width: 60%;
     padding-right: 20px;
 }
 
 .news-content h3 {
     font-size: 2rem;
-    margin-bottom: 15px;
     color: #1A68A2;
+    margin-bottom: 15px;
+<<<<<<< HEAD
+    color: #1A68A2;
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 }
 
 .news-content p {
     font-size: 1.2rem;
-    margin-bottom: 15px;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .news-image {
-    width: 50%;
-    height: auto;
-    margin-left: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .news-image img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+.read-more {
+    color: #1A68A2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 /* Kontakt Section */
 .contact-section {
     padding: 40px;
@@ -510,14 +751,21 @@ footer {
     margin-top: 50px;
 }
 
+/* Kontakt Container */
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Verhindert, dass die Boxen zu weit auseinander gezogen werden */
     align-items: stretch;
     gap: 30px;
+<<<<<<< HEAD
     margin-left: -65px;
+=======
+    max-width: 1200px; /* Maximalbreite setzen, um die Boxen auf großen Bildschirmen zentriert zu halten */
+    margin: 0 auto; /* Zentriert die gesamte Section auf dem Bildschirm */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 }
 
+/* Boxen für Kontaktformular und Kontaktdetails */
 .contact-form-box,
 .contact-details {
     flex: 1;
@@ -529,11 +777,13 @@ footer {
     flex-direction: column;
 }
 
+/* Überschriften und Absätze im Formular */
 .contact-form-box h2,
 .contact-form-box p {
     margin-bottom: 20px;
 }
 
+/* Formularfeld- und Button-Styling */
 .contact-form-box form {
     flex-grow: 1;
     display: flex;
@@ -556,6 +806,7 @@ footer {
     width: auto;
     background-color: #1A68A2;
     color: white;
+<<<<<<< HEAD
     font-size: 1.2rem;
     padding: 10px 30px;
     border-radius: 25px;
@@ -563,12 +814,27 @@ footer {
 }
 
 /* Google Maps Karte */
+=======
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
+}
+
+/* Google Maps Container */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 .map-container {
     margin-top: 20px;
     height: 400px;
     width: 100%;
 }
 
+/* Abstände zwischen den Boxen entfernen */
 .contact-container::before {
     content: "";
     display: block;
@@ -578,6 +844,7 @@ footer {
     margin: 0 20px;
 }
 
+<<<<<<< HEAD
 /* FAQ Section */
 .faq-section {
     padding: 50px 40px;
@@ -619,11 +886,15 @@ footer {
 }
 
 /* Footer */
+=======
+/* Footer Styles */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 footer {
     background-color: #ffffff;
     color: #1A68A2;
     text-align: center;
     padding-top: 20px;
+<<<<<<< HEAD
     padding-bottom: 40px;
 }
 
@@ -645,18 +916,42 @@ footer .footer-links a {
 
 footer .footer-links a:hover {
     color: #AECEE4;
+=======
+    padding-bottom: 60px; /* Erhöht den unteren Abstand */
+    margin-top: 50px;
+    border-top: 1px solid #ddd; /* Dezente Trennlinie zum Inhalt */
+>>>>>>> 0e4d94d (Updated index.html and style.css)
 }
 
 footer .logo {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 200px;
+    width: 300px; /* Mittlere Größe für das Logo */
     height: auto;
+    margin-bottom: 20px; /* Fügt mehr Abstand zwischen Logo und Text ein */
 }
 
-footer .gray-space {
-    background-color: #ffffff;
-    height: 40px;
+footer p {
+    margin-bottom: 10px; /* Abstand zwischen Text und Links */
+    font-size: 1rem; /* Angemessene Schriftgröße für den Text */
+    color: #555; /* Dezenteres Grau für den Text */
+}
+
+footer .footer-links {
+    margin-top: 10px; /* Weniger Abstand zum Text */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: #1A68A2; /* Dunkelblau für die Links */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer .footer-links a:hover {
+    color: #205B82; /* Dunkleres Blau beim Hover */
+    text-decoration: underline;
 }
 
 /* Mobile Styles für die Top Bar */
@@ -766,12 +1061,15 @@ footer .gray-space {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+<<<<<<< HEAD
     /* Kein Seitenscrollen */
     body {
         overflow-x: hidden;
     }
 
     /* Header und Top Bar zentrieren */
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     .top-bar .container {
         display: flex;
         justify-content: space-between;
@@ -788,6 +1086,7 @@ footer .gray-space {
         justify-content: center;
     }
 
+<<<<<<< HEAD
     /* Hamburger-Menü für Mobilansicht */
     .menu-toggle {
         display: block;
@@ -844,10 +1143,13 @@ footer .gray-space {
     }
 
     /* Mobile Hero Section */
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     .hero {
         height: 50vh;
     }
 
+<<<<<<< HEAD
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -862,12 +1164,15 @@ footer .gray-space {
     }
 
     /* Mobile Content Section */
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     .content-container {
         flex-direction: column;
         text-align: center;
         padding: 0 15px; /* Gleichmäßiger Abstand links und rechts */
     }
 
+<<<<<<< HEAD
     .text-content {
         padding: 10px 0;
     }
@@ -883,10 +1188,13 @@ footer .gray-space {
     }
 
     /* Services Mobile Grid */
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     .services {
         grid-template-columns: 1fr;
     }
 
+<<<<<<< HEAD
     .service-item {
         margin-bottom: 20px;
     }
@@ -896,6 +1204,8 @@ footer .gray-space {
     }
 
  @media (max-width: 768px) {
+=======
+>>>>>>> 0e4d94d (Updated index.html and style.css)
     .contact-container {
         display: flex;
         flex-direction: column; /* Boxen untereinander anordnen */
@@ -903,6 +1213,7 @@ footer .gray-space {
         margin: 0 auto;
     }
 
+<<<<<<< HEAD
     .contact-form-box,
     .contact-details {
         margin: 20px auto;
@@ -914,6 +1225,9 @@ footer .gray-space {
     .contact-details .map {
         margin-top: 20px;
         width: 100%;
+=======
+    .map-container {
+>>>>>>> 0e4d94d (Updated index.html and style.css)
         height: 300px;
     }
 
@@ -1012,12 +1326,43 @@ footer .gray-space {
         font-size: 1rem;
         margin-top: 10px;
     }
+}
 
+<<<<<<< HEAD
     .service-text a {
         color: #205B82; /* Setzt die Linkfarbe auf Dunkelblau */
         text-decoration: none; /* Entfernt die Unterstreichung des Links */
+=======
+/* Desktop-Version: Anpassungen für die Topbar */
+@media (min-width: 769px) {
+    /* Straße, Telefonnummer, E-Mail korrekt anzeigen */
+    .contact-info {
+        display: flex;
+        gap: 15px;
+        align-items: center;
     }
 
+    .contact-info span {
+        display: inline-block; /* Sorgt dafür, dass die Adress- und Kontaktinformationen neben den Icons angezeigt werden */
+        margin-right: 20px;
+        color: white;
+    }
+
+    /* Social Media Icons nach rechts verschieben */
+    .social-media {
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    /* Hamburger-Menü in der Desktop-Version ausblenden */
+    .menu-toggle {
+        display: none;
+>>>>>>> 0e4d94d (Updated index.html and style.css)
+    }
+
+<<<<<<< HEAD
     .service-text a:hover {
         color: #1A68A2; /* Hellblau beim Hover */
         text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
@@ -1098,3 +1443,48 @@ footer .gray-space {
         max-width: 90%; /* Zentrieren und weiter vergrößern */
     }
 }
+=======
+/* Hero Section Desktop (ab 769px Breite) */
+@media (min-width: 769px) {
+    .hero-overlay {
+        position: absolute;
+        top: 40%; /* Startet bei 40% der Bildschirmhöhe */
+        left: 0;
+        width: 100%;
+        transform: translateY(-30%); /* Verschiebt den Inhalt weiter nach oben */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem; /* Größerer Text für Desktop */
+        margin-bottom: 20px;
+        color: #fff; /* Weißer Text */
+        font-weight: bold; /* Macht den Text zu einer Überschrift */
+    }
+
+    .hero p {
+        font-size: 2rem; /* Größerer Text für Desktop */
+        margin-bottom: 30px;
+        color: #fff; /* Weißer Text */
+    }
+
+    .hero-button {
+        font-size: 1.8rem; /* Größerer Button für Desktop */
+        padding: 20px 40px;
+        background-color: rgba(37, 99, 235, 0.8); /* Leicht durchsichtiger blauer Hintergrund */
+        color: #fff; /* Weißer Text */
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+
+    .hero-button:hover {
+        transform: scale(1.05); /* Vergrößerung beim Hover */
+    }
+}
+>>>>>>> 0e4d94d (Updated index.html and style.css)
