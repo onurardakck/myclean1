@@ -14,6 +14,21 @@
 </head>
 
 <body>
+    
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
+        <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
+        <meta name="author" content="MyClean-Service">
+        <title>MyClean-Service</title>
+        <!-- Google Fonts - Arimo -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
     <!-- Header -->
     <header class="header">
         <div class="top-bar">
@@ -24,18 +39,11 @@
                     <img src="mail.png" alt="Mail" class="icon">
                     <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
                     <img src="anruf.png" alt="Anruf" class="icon">
-                    <!-- Call-to-Action für die Telefonnummer -->
-                    <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
+                    <span>+49 152 17782301</span>
                 </div>
                 <div class="social-media">
-                    <!-- Instagram-Link hinzufügen -->
-                    <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
-                        <img src="Instagram.png" alt="Instagram" class="icon">
-                    </a>
-                    <!-- LinkedIn-Link hinzufügen -->
-                    <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn" class="icon">
-                    </a>
+                    <a href="#"><img src="Facebook.png" alt="Facebook" class="icon"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
                 </div>
             </div>
         </div>
@@ -45,7 +53,6 @@
             </div>
             <div class="header-right">
                 <nav>
-                    <!-- Desktop-Menü -->
                     <ul class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Über uns</a></li>
@@ -63,17 +70,18 @@
                         </li>
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
-                    <!-- Hamburger-Menü für mobile Geräte -->
-                    <div class="menu-toggle">☰</div>
                 </nav>
             </div>
         </div>
     </header>
-
-    <!-- Mobile Navigationsmenü -->
+    <!-- Weitere HTML-Inhalte -->
+    </body>
+    </html>
+    
+    <!-- Vollbild-Navigationsmenü -->
     <nav id="mobile-nav" class="mobile-nav">
         <div class="close-btn" onclick="closeMenu()">✖</div>
-        <ul class="mobile-menu">
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Über uns</a></li>
             <li><a href="#">Leistungen</a>
@@ -91,42 +99,8 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
+</header>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mobileNav = document.getElementById('mobile-nav');
-            const mobileMenuItems = document.querySelectorAll('.mobile-menu > li');
-
-            // Öffnen und Schließen des Hamburger-Menüs
-            menuToggle.addEventListener('click', function() {
-                mobileNav.classList.toggle('show');
-            });
-
-            // Funktion, um das Untermenü zu öffnen und zu schließen
-            mobileMenuItems.forEach(function(item) {
-                item.addEventListener('click', function(event) {
-                    const submenu = item.querySelector('.submenu');
-                    
-                    // Überprüfen, ob das Menüelement ein Untermenü hat
-                    if (submenu) {
-                        event.preventDefault();
-                        item.classList.toggle('open'); // Untermenü öffnen
-                    }
-                });
-            });
-
-            // Funktion, um das Menü zu schließen, wenn außerhalb geklickt wird
-            mobileNav.addEventListener('click', function(event) {
-                if (event.target === mobileNav) {
-                    mobileNav.classList.remove('show'); // Menü schließen
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>
 
 <!-- Hero Section -->
 <section class="hero">
@@ -171,11 +145,15 @@
         <div class="contact-form-box">
             <h2>Kontaktieren Sie uns</h2>
             <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
-            <form action="send_mail.php" method="post">
+            <form action="#" method="post">
                 <input type="text" name="name" placeholder="Ihr Name" required>
                 <input type="email" name="email" placeholder="Ihre E-Mail" required>
                 <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
                 <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                <div class="consent-container">
+                    <input type="checkbox" name="privacy" required>
+                    <label>Ich habe die Datenschutzerklärung gelesen und willige ein.</label>
+                </div>
                 <button type="submit">Nachricht senden</button>
             </form>
         </div>
@@ -191,7 +169,7 @@
                 </div>
             </div>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sHertzstra%C3%9Fe%2024%2C%2013158%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -209,16 +187,5 @@
     </div>
     <div class="gray-space"></div>
 </footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.menu');
-
-        menuToggle.addEventListener('click', function() {
-            menu.classList.toggle('show');
-        });
-    });
-</script>
 </body>
 </html>
