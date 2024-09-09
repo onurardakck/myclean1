@@ -10,54 +10,29 @@ body {
     font-family: 'Arimo', sans-serif;
     color: #333;
     background-color: #ffffff;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Keine Seitenscroller */
 }
 
-/* Global Styles */
+/* Global Section Spacing */
 section {
-    margin-bottom: 50px; /* Fügt 50px Abstand unterhalb jeder Section hinzu */
+    margin-bottom: 50px;
 }
 
-/* Beispiel für eine individuelle Section-Anpassung */
 .hero {
-    margin-bottom: 0px; /* Individueller Abstand für die Hero-Section */
+    margin-bottom: 0px;
 }
 
-.content-section {
-    margin-bottom: 140px; /* Individueller Abstand für die Content-Section */
-}
-
-.services {
-    margin-bottom: 80px; /* Individueller Abstand für die Services-Section */
-}
-
-.about-section {
-    margin-bottom: 80px; /* Individueller Abstand für die About-Section */
-}
-
-.blog-section {
-    margin-bottom: 70px; /* Individueller Abstand für die Blog-Section */
-}
-
-.news-section {
-    margin-bottom: 70px; /* Individueller Abstand für die News-Section */
-}
-
-.contact-section {
-    margin-bottom: 70px; /* Individueller Abstand für die Kontakt-Section */
-}
-
-.faq-section {
-    margin-bottom: 70px; /* Individueller Abstand für die FAQ-Section */
+.content-section, .services, .about-section, .blog-section, .news-section, .contact-section, .faq-section {
+    margin-bottom: 70px;
 }
 
 footer {
-    margin-top: 70px; /* Fügt 70px Abstand oberhalb des Footers hinzu */
+    margin-top: 70px;
 }
 
 /* Top Bar Styles */
 .top-bar {
-    background-color: #1A68A2; /* Hauptblau */
+    background-color: #1A68A2;
     color: #ffffff;
     padding: 20px 0;
     width: 100%;
@@ -84,10 +59,6 @@ footer {
 .contact-info .icon {
     width: 24px;
     height: 24px;
-}
-
-.contact-info span {
-    margin-right: 20px;
 }
 
 .contact-link {
@@ -135,17 +106,6 @@ footer {
 .header-left .logo {
     max-height: 90px;
     position: relative;
-    top: 0;
-    left: -15px;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-}
-
-.header-right nav {
-    margin-right: 20px;
 }
 
 .menu {
@@ -155,73 +115,15 @@ footer {
 }
 
 .menu li a {
-    color: #205B82; /* Dunkleres Blau */
+    color: #205B82;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .menu li a:hover {
-    color: #1A68A2; /* Hellblau */
+    color: #1A68A2;
     text-decoration: underline;
-}
-/* Dropdown Menu */
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    position: relative;
-}
-
-.menu > li {
-    position: relative;
-}
-
-.submenu {
-    list-style: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none;
-    padding: 10px 0;
-}
-
-.submenu li {
-    margin: 0;
-}
-
-.submenu li a {
-    color: #205B82;
-    padding: 10px 20px;
-    display: block;
-    white-space: nowrap;
-}
-
-.submenu li a:hover {
-    background-color: #f0f0f0;
-}
-
-.menu li:hover .submenu {
-    display: block;
-}
-
-.contact-call {
-    display: flex;
-    align-items: center;
-    color: #1A68A2; /* Hauptblau */
-    font-weight: bold;
-}
-
-.contact-call .contact-icon {
-    font-size: 2rem;
-    margin-right: 10px;
-}
-
-.contact-call .contact-text p {
-    margin: 0;
-    line-height: 1.2;
 }
 
 /* Hero Section */
@@ -252,36 +154,38 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(26, 104, 162, 0.5) 50%, transparent 100%); /* Hauptblau */
-    clip-path: ellipse(150% 100% at 50% 0%);
-    z-index: -1;
-}
-
-.hero h1, .hero p, .hero-button {
+    background: linear-gradient(to bottom, rgba(26, 104, 162, 0.5) 50%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Weiter nach unten schieben */
+    padding-bottom: 70px; /* Abstand nach unten vergrößert */
     z-index: 1;
 }
 
+.hero-content {
+    color: #fff;
+    text-align: center;
+}
+
 .hero h1 {
-    font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 2rem; /* Etwas kleiner als zuvor */
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-top: 10px;
+    font-size: 1rem; /* Etwas kleiner */
+    margin-bottom: 15px;
 }
 
 .hero-button {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background-color: rgba(37, 99, 235, 0.8);
-    color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    text-decoration: none;
+    padding: 8px 16px; /* Kleinere Größe des Buttons */
+    background-color: #ffffff;
+    color: #1A68A2;
     font-weight: bold;
-    font-size: 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem; /* Kleinere Schriftgröße im Button */
     transition: transform 0.3s ease;
 }
 
@@ -296,7 +200,6 @@ footer {
     justify-content: center;
     padding: 50px 0;
     background-color: #ffffff;
-    margin-bottom: 50px; /* Erhöht den Abstand nach unten */
 }
 
 .content-container {
@@ -315,7 +218,7 @@ footer {
 
 .text-content h2 {
     font-size: 2.5rem;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
 }
 
 .text-content p {
@@ -325,15 +228,10 @@ footer {
     line-height: 1.6;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
 .buttons .button {
     display: inline-block;
     padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #1A68A2; /* Hauptblau */
+    background-color: #1A68A2;
     color: #ffffff;
     border-radius: 15px;
     text-decoration: none;
@@ -361,7 +259,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
-    margin-top: 50px; /* Erhöht den Abstand nach oben */
+    margin-top: 50px;
 }
 
 .service-item {
@@ -369,15 +267,10 @@ footer {
     flex-direction: column;
     overflow: hidden;
     cursor: pointer;
-    margin: 0;
-    padding: 0;
 }
 
 .service-image {
     width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
     height: 200px;
 }
 
@@ -390,17 +283,10 @@ footer {
 
 .service-text {
     background-color: #ffffff;
-    color: #1A68A2; /* Hauptblau */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: #1A68A2;
     padding: 30px;
     text-align: center;
-    transition: background-color 0.5s ease-in-out;
     height: 150px;
-    margin: 0;
-    border: none;
 }
 
 .service-item:hover .service-image img {
@@ -420,19 +306,17 @@ footer {
 
 .service-item:hover p {
     display: block;
-    opacity: 1;
 }
 
 /* About Section */
 .about-section {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 0;
     margin: 0;
     width: 100vw;
-    z-index: 10; /* Beispielwert - Stelle sicher, dass dieser Wert höher ist als andere überlagernde Elemente */
-    position: relative; /* Stelle sicher, dass z-index funktioniert */
+    z-index: 10;
+    position: relative;
 }
 
 .about-container {
@@ -440,7 +324,6 @@ footer {
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
-    gap: 0;
 }
 
 .about-image {
@@ -456,7 +339,7 @@ footer {
 .about-text {
     flex: 1;
     background-color: #ffffff;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     padding: 40px;
     text-align: left;
     display: flex;
@@ -479,18 +362,17 @@ footer {
     display: inline-block;
     margin-top: 30px;
     padding: 15px 30px;
-    background-color: #1A68A2; /* Hauptblau */
-    color: #ffffff !important; /* Erzwingt weiße Schrift */
+    background-color: #1A68A2;
+    color: #ffffff;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    align-self: flex-start;
 }
 
 .about-button:hover {
-    background-color: #205B82; /* Dunkleres Blau beim Hover */
-    color: #ffffff !important; /* Erzwingt weiße Schrift beim Hover */
+    background-color: #205B82;
+    color: #ffffff;
     border: 2px solid #ffffff;
 }
 
@@ -512,17 +394,17 @@ footer {
     overflow: hidden;
     padding: 50px;
     border-radius: 20px;
-    max-width: 50%; /* Ensures both blog items take up 50% of the container width */
+    max-width: 50%;
 }
 
 .blog-item.left {
-    background-color: #1A68A2; /* Hauptblau */
+    background-color: #1A68A2;
     color: white;
     border-radius: 20px;
 }
 
 .blog-item.right {
-    background-color: #1A68A2; /* Dunkleres Blau */
+    background-color: #1A68A2;
     color: white;
     border-radius: 20px;
 }
@@ -542,33 +424,29 @@ footer {
     margin-bottom: 20px;
 }
 
-.full-content {
-    display: none;
-}
-
 .blog-section .toggle-button {
     display: inline-block;
     color: white;
-    background-color: #689ABF; /* Helles Blau */
+    background-color: #689ABF;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 30px;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #1A68A2; /* Hauptblau */
+    border: 2px solid #1A68A2;
     cursor: pointer;
 }
 
 .blog-section .toggle-button:hover {
-    background-color: #AECEE4; /* Hellblau */
+    background-color: #AECEE4;
 }
 
 /* News Section */
 .news-section {
     padding: 50px 40px;
     background-color: #ffffff;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     font-family: 'Arimo', sans-serif;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -598,7 +476,7 @@ footer {
 .news-content h3 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
 }
 
 .news-content p {
@@ -623,27 +501,11 @@ footer {
     object-fit: cover;
 }
 
-.read-more {
-    display: inline-block;
-    color: white;
-    background-color: #ffffff; /* Hauptblau */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 30px;
-    transition: color 0.3s, background-color 0.3s;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.read-more:hover {
-    background-color: #AECEE4; /* Hellblau */
-}
-
 /* Kontakt Section */
 .contact-section {
     padding: 40px;
     background-color: #ffffff;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     font-family: 'Arimo', sans-serif;
     margin-top: 50px;
 }
@@ -653,7 +515,7 @@ footer {
     justify-content: space-between;
     align-items: stretch;
     gap: 30px;
-    margin-left: -65px; /* Verschiebt die Boxen nach links */
+    margin-left: -65px;
 }
 
 .contact-form-box,
@@ -691,61 +553,20 @@ footer {
 }
 
 .contact-form-box form button {
-    width: auto; /* Macht den Button so breit wie der Text */
-    background-color: #1A68A2; /* Hauptblau */
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 12px 20px;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    align-self: flex-start; /* Macht den Button linksbündig */
-}
-
-.contact-form-box form button:hover {
-    background-color: #205B82; /* Dunkleres Blau */
-}
-
-.consent-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-left: -780px; /* Keine Abweichung nach rechts */
-}
-
-.consent-container input[type="checkbox"] {
-    margin-right: -790px;
-    transform: translateY(7px); /* Justiere die vertikale Position des Kästchens, um es auf eine Linie mit dem Text zu bringen */
-}
-
-.consent-container label {
-    font-size: 0.9rem;
-    color: #1A68A2;
-    line-height: 1; /* Verhindert zusätzlichen vertikalen Abstand */
-}
-
-.contact-form-box form button {
+    width: auto;
     background-color: #1A68A2;
     color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 30px;
     border-radius: 25px;
-    padding: 10px 30px; /* Verkleinert die Breite des Buttons */
-    margin-top: 20px; /* Abstand zum vorherigen Element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    width: auto; /* Verhindert, dass der Button die volle Breite einnimmt */
-    align-self: flex-start; /* Positioniert den Button linksbündig */
+    margin-top: 20px;
 }
 
+/* Google Maps Karte */
 .map-container {
     margin-top: 20px;
-    flex-basis: 100%;
     height: 400px;
+    width: 100%;
 }
 
 .contact-container::before {
@@ -761,7 +582,7 @@ footer {
 .faq-section {
     padding: 50px 40px;
     background-color: #ffffff;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     font-family: 'Arimo', sans-serif;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -774,7 +595,7 @@ footer {
 
 .faq-section h2 {
     font-size: 2.5rem;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -787,7 +608,7 @@ footer {
 
 .faq-item h3 {
     font-size: 1.8rem;
-    color: #1A68A2; /* Hauptblau */
+    color: #1A68A2;
     margin-bottom: 15px;
 }
 
@@ -818,12 +639,12 @@ footer .footer-links {
 }
 
 footer .footer-links a {
-    color: #1A68A2; /* Hellblau für die Links */
+    color: #1A68A2;
     text-decoration: none;
 }
 
 footer .footer-links a:hover {
-    color: #AECEE4; /* Hellblau beim Hover */
+    color: #AECEE4;
 }
 
 footer .logo {
@@ -838,41 +659,193 @@ footer .gray-space {
     height: 40px;
 }
 
+/* Mobile Styles für die Top Bar */
+@media (max-width: 768px) {
+    /* Top Bar Container */
+    .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px; /* Padding für den linken und rechten Rand */
+    }
+
+    /* Linke Seite: Standort, Anruf, E-Mail Icons */
+    .contact-info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px; /* Abstand zwischen den Icons */
+        padding-left: 10px; /* Abstand von der linken Seite */
+    }
+
+    /* Rechte Seite: Hamburger Menü */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        padding-right: 10px; /* Abstand von der rechten Seite */
+    }
+
+    /* Social Media Icons zentrieren */
+    .social-media {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px; /* Abstand zwischen den Social Media Icons */
+    }
+
+/* --- Bestehende CSS-Datei --- */
+
+/* Dein normales Styling geht hier ... */
+
+/* Mobile Menu Styles - füge dies unter deinen bestehenden mobilen Stilen ein */
+@media (max-width: 768px) {
+    /* Vollbild-Menü mit transparentem, dunklem Blau-Hintergrund */
+    .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 40, 70, 0.9); /* Dunkles Blau mit Transparenz */
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav.show {
+        display: flex;
+    }
+
+    /* Menü-Elemente */
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mobile-nav ul li {
+        margin: 20px 0;
+    }
+
+    .mobile-nav ul li a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    /* Untermenü-Stile */
+    .submenu {
+        display: none;
+        margin-top: 10px;
+        padding-left: 20px; /* Leichter Einzug für Untermenü */
+    }
+
+    .submenu.show {
+        display: block; /* Zeigt das Untermenü bei Klick */
+    }
+
+    .submenu li {
+        margin: 10px 0;
+    }
+
+    .submenu li a {
+        font-size: 1.3rem;
+    }
+
+    /* Stil für Schließen-Button und Klick auf außerhalb */
+    .close-btn, .mobile-nav-overlay {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
 /* Mobile Styles */
 @media (max-width: 768px) {
+    /* Kein Seitenscrollen */
+    body {
+        overflow-x: hidden;
+    }
 
+    /* Header und Top Bar zentrieren */
     .top-bar .container {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
+    /* Icons und Social Media Buttons korrekt zentrieren */
+    .contact-info {
+        justify-content: flex-start;
     }
 
-    .header-left .logo {
-        margin: 0 auto;
-        max-height: 70px;
+    .social-media {
+        display: flex;
+        justify-content: center;
     }
 
-    .header-right nav {
-        margin-right: 0;
+    /* Hamburger-Menü für Mobilansicht */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        margin-right: 5%;
     }
 
     .menu {
-        flex-direction: column;
-        gap: 10px;
+        display: none; /* Versteckt in mobiler Ansicht */
     }
 
-    .contact-call {
-        margin-top: 15px;
+    .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
     }
 
+    .mobile-nav.show {
+        display: flex;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mobile-nav ul li {
+        margin: 20px 0;
+    }
+
+    .mobile-nav ul li a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    /* Fullscreen-Hamburger-Menü */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Mobile Hero Section */
     .hero {
-        height: 40vh;
+        height: 50vh;
     }
 
     .hero h1 {
@@ -888,19 +861,28 @@ footer .gray-space {
         padding: 10px 20px;
     }
 
+    /* Mobile Content Section */
     .content-container {
         flex-direction: column;
         text-align: center;
+        padding: 0 15px; /* Gleichmäßiger Abstand links und rechts */
     }
 
     .text-content {
-        padding: 10px;
+        padding: 10px 0;
     }
 
     .image-content {
-        padding: 10px;
+        padding: 10px 0;
     }
 
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Services Mobile Grid */
     .services {
         grid-template-columns: 1fr;
     }
@@ -913,100 +895,206 @@ footer .gray-space {
         padding: 20px;
     }
 
-    .blog-section {
-        flex-direction: column;
-    }
-
-    .blog-item {
-        padding: 30px 20px;
-    }
-
-    .blog-content {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .news-item {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .news-content {
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .news-video {
-        width: 100%;
-        margin-left: 0;
-    }
-
+ @media (max-width: 768px) {
     .contact-container {
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        flex-direction: column; /* Boxen untereinander anordnen */
+        text-align: center;
+        margin: 0 auto;
     }
 
     .contact-form-box,
     .contact-details {
+        margin: 20px auto;
+        width: 90%; /* Breite auf 90% setzen für eine gleichmäßige Darstellung */
+        text-align: center;
+    }
+
+    /* Google Maps-Karte für mobile Ansicht */
+    .contact-details .map {
+        margin-top: 20px;
         width: 100%;
-    }
-
-    .contact-form-box form button {
-        width: 100%;
-    }
-
-    .contact-container::before {
-        display: none;
-    }
-
-    .map-container {
         height: 300px;
     }
-}
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
+@media (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero p {
+    .contact-form-box,
+    .contact-details {
+        width: 90%; /* Die Breite der Boxen anpassen */
+        margin-bottom: 20px; /* Etwas Abstand zwischen den Boxen */
+    }
+
+    .map {
+        width: 100%;
+        height: 300px; /* Höhe der Karte */
+        margin-top: 20px; /* Abstand zur oberen Box */
+    }
+
+
+@media (max-width: 768px) {
+    /* About Section (Mobile Optimierung) */
+    .about-section {
+        display: flex;
+        flex-direction: column; /* Stackt den Text und das Bild untereinander */
+        align-items: center; /* Zentriert den gesamten Inhalt */
+        padding: 20px;
+    }
+
+    .about-text {
+        text-align: center; /* Zentriert den Text */
+        margin-bottom: 20px; /* Abstand zwischen Text und Bild */
+    }
+
+    .about-image {
+        width: 100%; /* Breite auf 100% des Containers */
+        max-width: 500px; /* Maximalbreite, damit das Bild nicht zu groß wird */
+        text-align: center; /* Zentriert das Bild */
+    }
+
+    .about-image img {
+        width: 100%; /* Bild füllt den Container */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Zentriert das Bild horizontal */
+    }
+
+    .about-button {
+        display: inline-block;
+        padding: 10px 20px; /* Etwas kürzerer Button */
+        background-color: #1A68A2;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
         font-size: 1rem;
+        margin-top: 10px;
     }
 
-    .hero-button {
+    .about-button:hover {
+        background-color: #205B82; /* Button Farbe beim Hover */
+    }
+
+@media (max-width: 768px) {
+    /* Services Section (Mobile Optimierung) */
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px; /* Mehr Abstand zwischen den einzelnen Services */
+        padding: 20px;
+    }
+
+    .service-item {
+        text-align: center; /* Zentriert die Inhalte */
+    }
+
+    .service-text {
+        color: #205B82; /* Dunkelblau für den Text */
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    .service-text h3 {
+        color: #205B82; /* Dunkelblau für die Titel */
+        font-size: 1.5rem;
+        margin-top: 20px; /* Fügt mehr Abstand zwischen dem Bild und dem Titel hinzu */
+        margin-bottom: 10px; /* Fügt mehr Abstand unter dem Titel hinzu */
+    }
+
+    .service-text p {
+        display: block;
+        color: #555; /* Leicht dunkleres Grau für den Beschreibungstext */
         font-size: 1rem;
-        padding: 8px 16px;
+        margin-top: 10px;
     }
 
-    .menu li a {
-        font-size: 1rem;
+    .service-text a {
+        color: #205B82; /* Setzt die Linkfarbe auf Dunkelblau */
+        text-decoration: none; /* Entfernt die Unterstreichung des Links */
     }
-}
 
-/* Stil für alle Links in der Service-Section */
-.service-text a:link,
-.service-text a:visited {
-    color: #1A68A2; /* Blau für normale und besuchte Links */
-    text-decoration: none;
-}
+    .service-text a:hover {
+        color: #1A68A2; /* Hellblau beim Hover */
+        text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
+    }
 
-.service-text a:hover,
-.service-text a:active {
-    color: #205B82; /* Dunkleres Blau beim Hover und Aktivieren */
-    text-decoration: underline;
-}
+    .service-image img {
+        width: 100%;
+        max-width: 400px; /* Maximalbreite des Bildes */
+        height: auto;
+        margin: 0 auto; /* Zentriert das Bild horizontal */
+    }
 
-/* Stil für alle Links auf der Seite */
-a:link,
-a:visited {
-    color: #1A68A2; /* Blau für normale und besuchte Links */
-    text-decoration: none;
-}
+@media (max-width: 768px) {
+    /* Verkleinere den Abstand zwischen der Service- und der News-Section */
+    .services {
+        margin-bottom: 0px;
+    }
 
-a:hover,
-a:active {
-    color: #205B82; /* Dunkleres Blau beim Hover und Aktivieren */
-    text-decoration: underline;
+    /* Überschrift und Text in der News-Section weiter nach links verschieben und Zeilenumbrüche anpassen */
+    .news-section .news-item {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 30px;
+        padding-left: 10px; /* Weiter nach links verschoben */
+    }
+
+    .news-section h3 {
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 5px; /* Überschrift nach links verschieben */
+        line-height: 1.4;
+    }
+
+    /* Zweizeilige Überschrift: Sperrmüllentsorgung in einer Zeile, Winterdienst in der nächsten */
+    .news-section h3 {
+        white-space: normal;
+    }
+
+    /* Textaufteilung für die Beschreibung anpassen */
+    .news-section .news-content {
+        text-align: left;
+        padding-left: 5px;
+        line-height: 1.6;
+        width: 95%;
+    }
+
+    .news-section .news-content p {
+        max-width: 100%;
+        word-break: break-word;
+        text-align: left;
+    }
+
+    /* Button anpassen und mehr Abstand zum Bild */
+    .news-section .read-more {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 30px;
+        background-color: #1A68A2;
+        color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 5px;
+        margin-bottom: 40px; /* Noch mehr Abstand zum Bild */
+    }
+
+    .news-section .read-more:hover {
+        background-color: #205B82;
+    }
+
+    /* Bild unter dem Button größer machen und zentrieren */
+    .news-section .news-image {
+        margin: 0 auto;
+        width: 100%; /* Bildgröße weiter vergrößern */
+        height: auto;
+        max-width: 90%; /* Zentrieren und weiter vergrößern */
+    }
 }
