@@ -22,21 +22,22 @@
         <div class="container">
             <div class="contact-info">
                 <img src="standort.png" alt="Standort" class="icon">
-                <span>Wollankstr 61c, 13359 Berlin</span>
                 <img src="mail.png" alt="Mail" class="icon">
-                <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
                 <img src="anruf.png" alt="Anruf" class="icon">
-                <span>+49 152 17782301</span>
             </div>
-                <!-- Mitte: Social Media Icons -->
-                <div class="social-media">
-                    <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
-                        <img src="Instagram.png" alt="Instagram" class="icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn" class="icon">
-                    </a>
-                </div>
+            <!-- Mitte: Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
+                    <img src="Instagram.png" alt="Instagram" class="icon">
+                </a>
+                <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="icon">
+                </a>
+            </div>
+            <!-- Hamburger-Menü auf der rechten Seite -->
+            <div class="menu-toggle">
+                <span>☰</span>
+            </div>
         </div>
     </div>
 
@@ -189,7 +190,6 @@
     </div>
 </section>
 
-
 <!-- Kontakt Section -->
 <section class="contact-section">
     <div class="contact-container">
@@ -258,20 +258,23 @@
     @media (max-width: 768px) {
         .header-container {
             flex-direction: column;
+            align-items: center; /* Zentriert Logo und Menü */
+        }
+
+        .header-left .logo {
+            margin: 0 auto;
+            max-height: 70px;
         }
 
         .about-section, .services, .news-section, .contact-section {
             padding: 20px;
+            text-align: center;
         }
 
         .about-container, .service-item, .contact-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .about-text, .service-text, .contact-form-box, .contact-details {
-            text-align: center;
         }
 
         .mobile-nav {
