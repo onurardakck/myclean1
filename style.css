@@ -833,20 +833,22 @@ footer .footer-links a:hover {
 @media (max-width: 768px) {
     .top-bar .container {
         flex-direction: row;
-        justify-content: flex-start; /* Ändert die Anordnung nach links */
+        justify-content: flex-start; /* Elemente nach links ausrichten */
         align-items: center;
-        padding-left: 10px; /* Fügt etwas Abstand vom linken Rand hinzu */
+        padding-left: 0; /* Kein zusätzlicher Abstand links */
     }
 
     .contact-info {
-        justify-content: flex-start;
+        display: flex;
+        justify-content: flex-start; /* Kontaktinformationen links ausrichten */
         flex-wrap: wrap;
         gap: 10px;
-        margin-right: 20px; /* Sorgt für etwas Abstand zwischen Kontaktinformationen und Social Media Icons */
+        margin-right: 0; /* Kein zusätzlicher Abstand rechts */
     }
 
     .social-media {
-        justify-content: flex-start; /* Verschiebt Social Media Icons weiter nach links */
-        margin-left: 10px; /* Fügt einen kleinen Abstand zur linken Seite hinzu, um zentriert zu wirken */
+        display: flex;
+        justify-content: flex-start; /* Social Media Icons links ausrichten */
+        margin-left: 0; /* Entferne jeglichen Abstand, damit die Icons nach links wandern */
     }
 }
