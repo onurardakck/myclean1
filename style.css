@@ -796,4 +796,40 @@ footer .footer-links a:hover {
         width: 100%;
         margin: 0 auto; /* Zentriert das Bild */
     }
+
+/* Mobile Optimierung der Top Bar */
+@media (max-width: 768px) {
+    .top-bar .contact-info span {
+        display: none; /* Versteckt die Texte in der mobilen Ansicht */
+    }
+    
+    .top-bar .contact-info .icon {
+        margin-right: 10px;
+        display: inline-block; /* Zeigt nur die Icons */
+    }
+
+    .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .top-bar .contact-info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px; /* Abstand zwischen den Icons auf der linken Seite */
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center; /* Zentriert die Social Media Icons */
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block; /* Zeigt das Hamburger-Menü auf der rechten Seite */
+        margin-left: auto;
+        cursor: pointer;
+    }
 }
