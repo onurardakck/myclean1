@@ -965,3 +965,50 @@ footer .footer-links a:hover {
         text-decoration: underline; /* Stil für Hover-Effekt */
     }
 }
+
+@media (max-width: 768px) {
+    .news-content h3 {
+        text-align: center; /* Zentriert die Überschrift */
+        word-break: break-word; /* Bricht lange Wörter korrekt um */
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Footer Styles für Mobile */
+    footer {
+        background-color: #ffffff; /* Hintergrundfarbe weiß */
+        color: #1A68A2; /* Dunkelblauer Text */
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        margin-top: 50px;
+        border-top: 1px solid #ddd; /* Optionale dezente Trennlinie */
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #1A68A2; /* Dunkelblauer Text */
+    }
+
+    footer .footer-links {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer .footer-links a {
+        color: #1A68A2; /* Dunkelblau für die Links */
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    footer .footer-links a:hover {
+        color: #205B82; /* Etwas dunkler beim Hover */
+        text-decoration: underline;
+    }
+}
