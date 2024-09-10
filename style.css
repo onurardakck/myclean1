@@ -1,318 +1,788 @@
-<!DOCTYPE html>
-<html lang="de">
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
-    <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
-    <meta name="author" content="MyClean-Service">
-    <title>MyClean-Service</title>
-    <!-- Google Fonts - Arimo -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Global Styles */
+body {
+    font-family: 'Arimo', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
 
-<body>
+section {
+    margin-bottom: 50px; /* Fügt 50px Abstand unterhalb jeder Section hinzu */
+}
 
-<!-- Header -->
-<header class="header">
-    <!-- Oberer Teil mit Kontaktinformationen -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <img src="standort.png" alt="Standort" class="icon">
-                <img src="mail.png" alt="Mail" class="icon">
-                <img src="anruf.png" alt="Anruf" class="icon">
-            </div>
-            <!-- Mitte: Social Media Icons -->
-            <div class="social-media">
-                <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
-                    <img src="Instagram.png" alt="Instagram" class="icon">
-                </a>
-                <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
-                    <img src="linkedin.png" alt="LinkedIn" class="icon">
-                </a>
-            </div>
-            <!-- Hamburger-Menü auf der rechten Seite -->
-            <div class="menu-toggle">
-                <span>☰</span>
-            </div>
-        </div>
-    </div>
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
 
-    <!-- Unterer Teil mit Logo und Navigation -->
-    <div class="header-container">
-        <div class="header-left">
-            <img src="mycleanlogo.png" alt="Logo" class="logo">
-        </div>
-        <div class="header-right">
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über uns</a></li>
-                    <li><a href="services.html">Leistungen</a>
-                        <ul class="submenu">
-                            <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
-                            <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
-                            <li><a href="baureinigung.html">Baureinigung</a></li>
-                            <li><a href="grundreinigung.html">Grundreinigung</a></li>
-                            <li><a href="bueroreinigung.html">Büroreinigung</a></li>
-                            <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
-                            <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
-                            <li><a href="winterdienst.html">Winterdienst</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
 
-<!-- Hero Section -->
-<section class="hero">
-    <video autoplay muted playsinline class="hero-video" id="heroVideo">
-        <source src="reinigung.mp4" type="video/mp4">
-        Ihr Browser unterstützt keine Videos.
-    </video>
-    <div class="hero-overlay">
-        <div class="hero-content">
-            <h1>Mit uns glänzen!</h1>
-            <p>Gebäudereinigung - Grundreinigung - Baureinigung</p>
-            <a href="contact.html" class="hero-button">Sprich mit uns</a>
-        </div>
-    </div>
-</section>
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 5;
+}
 
-<!-- Über uns Section -->
-<section class="about-section">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="reinigung1.png" alt="Unsere Aufgabe">
-        </div>
-        <div class="about-text">
-            <h2>Unsere Aufgabe</h2>
-            <p>
-                Von unserem ersten Treffen bis zum Abschluss Ihres Projekts ist es unser Versprechen und Ziel, die Bedürfnisse und Erwartungen unserer Kunden zu erfüllen.
-            </p>
-            <a href="about.html" class="about-button">Über Uns</a>
-        </div>
-    </div>
-</section>
+.hero h1, .hero p, .hero-button {
+    z-index: 1;
+}
 
-<!-- Services Section -->
-<section class="services">
-    <div class="service-item">
-        <div class="service-image">
-            <a href="gebaeudereinigung.html">
-                <img src="1.png" alt="Gebäudereinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="gebaeudereinigung.html">Gebäudereinigung</a></h3>
-            <p>Umfassende Reinigungsdienste für Ihr Gebäude, angepasst an Ihre Bedürfnisse.</p>
-        </div>
-    </div>
-    
-    <div class="service-item">
-        <div class="service-image">
-            <a href="fensterreinigung.html">
-                <img src="2.png" alt="Fensterreinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="fensterreinigung.html">Fensterreinigung</a></h3>
-            <p>Streifenfreie Fensterreinigung für einen klaren Durchblick.</p>
-        </div>
-    </div>
-    
-    <div class="service-item">
-        <div class="service-image">
-            <a href="baureinigung.html">
-                <img src="3.png" alt="Baureinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="baureinigung.html">Baureinigung</a></h3>
-            <p>Baureinigung, Bauendreinigung und Zwischenreinigung für Ihre Baustellen.</p>
-        </div>
-    </div>
+.hero h1 {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
 
-    <div class="service-item">
-        <div class="service-image">
-            <a href="grundreinigung.html">
-                <img src="4.png" alt="Grundreinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="grundreinigung.html">Grundreinigung</a></h3>
-            <p>Tiefenreinigung für Ihre Räumlichkeiten, um den höchsten Standard zu gewährleisten.</p>
-        </div>
-    </div>
+.hero p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+}
 
-    <div class="service-item">
-        <div class="service-image">
-            <a href="bueroreinigung.html">
-                <img src="5.png" alt="Büroreinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="bueroreinigung.html">Büroreinigung</a></h3>
-            <p>Professionelle Reinigungslösungen für Ihr Büro, damit Sie sich auf das Wesentliche konzentrieren können.</p>
-        </div>
-    </div>
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgba(37, 99, 235, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    z-index: 10; /* Stellt sicher, dass der Button im Vordergrund bleibt */
+    position: relative;
+}
 
-    <div class="service-item">
-        <div class="service-image">
-            <a href="praxisreinigung.html">
-                <img src="6.png" alt="Praxisreinigung">
-            </a>
-        </div>
-        <div class="service-text">
-            <h3><a href="praxisreinigung.html">Praxisreinigung</a></h3>
-            <p>Reinigungslösungen speziell für Praxen, um Hygiene und Sauberkeit sicherzustellen.</p>
-        </div>
-    </div>
-</section>
+.hero-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
-<!-- News Section -->
-<section class="news-section">
-    <div class="news-item">
-        <div class="news-content">
-            <h3>Sperrmüllentsorgung und Winterdienst</h3>
-            <p>Wir freuen uns, Ihnen mitteilen zu können, dass wir ab sofort auch die Sperrmüllentsorgung und den Winterdienst anbieten. Damit erweitern wir unser Serviceportfolio und können noch besser auf Ihre Bedürfnisse eingehen.</p>
-            <a href="#" class="read-more">Mehr lesen</a>
-        </div>
-        <div class="news-image">
-            <img src="winterdienstsperrmüll.png" alt="Sperrmüllentsorgung und Winterdienst">
-        </div>
-    </div>
-</section>
-
-<!-- Kontakt Section -->
-<section class="contact-section">
-    <div class="contact-container">
-        <div class="contact-form-box">
-            <h2>Kontaktieren Sie uns</h2>
-            <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
-            <form action="send_mail.php" method="post">
-                <input type="text" name="name" placeholder="Ihr Name" required>
-                <input type="email" name="email" placeholder="Ihre E-Mail" required>
-                <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
-                <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-                <button type="submit">Nachricht senden</button>
-            </form>
-        </div>
-        <div class="contact-details">
-            <div class="contact-info">
-                <div class="contact-info-left">
-                    <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
-                    <p><strong>Telefon:</strong> +49 152 17782301</p>
-                    <p><strong>E-Mail:</strong> info@myclean-service.de</p>
-                </div>
-                <div class="contact-info-right">
-                    <p><strong>Öffnungszeiten:</strong><br>Mo - Fr: 8:00 - 18:00<br>Sa: 9:00 - 14:00</p>
-                </div>
-            </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <img src="mycleanlogo.png" alt="Logo" class="logo">
-        <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
-        <div class="footer-links">
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-        </div>
-    </div>
-</footer>
-
-<!-- JavaScript für das Hamburger-Menü -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const closeBtn = document.querySelector('.close-btn');
-
-        // Öffnen des Menüs beim Klicken auf das Hamburger-Menü
-        menuToggle.addEventListener('click', function () {
-            mobileNav.classList.toggle('show');
-        });
-
-        // Schließen des Menüs beim Klicken auf den Schließen-Button
-        closeBtn.addEventListener('click', function () {
-            mobileNav.classList.remove('show');
-        });
-    });
-</script>
-
-<!-- Mobile Optimierungen -->
-<style>
-    @media (max-width: 768px) {
-        .header-container {
-            flex-direction: column;
-            align-items: center; /* Zentriert Logo und Menü */
-        }
-
-        .header-left .logo {
-            margin: 0 auto;
-            max-height: 70px;
-        }
-
-        .about-section, .services, .news-section, .contact-section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .about-container, .service-item, .contact-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .mobile-nav {
-            display: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1000;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .mobile-menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        .mobile-menu li {
-            margin: 20px 0;
-        }
-
-        .menu-toggle {
-            display: block;
-            cursor: pointer;
-        }
-
-        .close-btn {
-            text-align: right;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
+/* Desktop Styles für die Hero-Section */
+@media (min-width: 769px) {
+    .hero {
+        height: 100vh; /* Volle Bildschirmhöhe für Desktop */
     }
-</style>
 
-</body>
-</html>
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .hero-button {
+        font-size: 1.8rem;
+        padding: 20px 40px;
+        margin-top: 40px;
+    }
+}
+
+/* Mobile Styles für die Hero-Section */
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #1A68A2;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-left: 15px;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-media a:hover img {
+    opacity: 0.8;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.header-left .logo {
+    max-height: 90px;
+    position: relative;
+    top: 0;
+    left: -15px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right nav {
+    margin-right: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #205B82;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menu li a:hover {
+    color: #1A68A2;
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px 0;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    color: #205B82;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    z-index: 10;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    background-color: #ffffff;
+    color: #1A68A2;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #1A68A2;
+    color: #ffffff !important;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
+
+.about-button:hover {
+    background-color: #205B82;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 50px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.service-image {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-text {
+    background-color: #ffffff;
+    color: #1A68A2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+    height: 150px;
+    margin: 0;
+    border: none;
+}
+
+.service-item:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin-top: 10px;
+    display: none;
+}
+
+.service-item:hover p {
+    display: block;
+    opacity: 1;
+}
+
+/* Stil für Links in der Services Section */
+.services .service-text a {
+    color: #1A68A2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services .service-text a:hover {
+    color: #205B82;
+    text-decoration: underline;
+}
+
+/* Styling für die News-Section */
+.news-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #1A68A2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-content {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.news-content h3 {
+    font-size: 2rem;
+    color: #1A68A2;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.read-more {
+    color: #1A68A2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Kontakt Section */
+.contact-section {
+    padding: 40px;
+    background-color: #ffffff;
+    color: #1A68A2;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 50px;
+}
+
+/* Kontakt Container */
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Boxen für Kontaktformular und Kontaktdetails */
+.contact-form-box,
+.contact-details {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Überschriften und Absätze im Formular */
+.contact-form-box h2,
+.contact-form-box p {
+    margin-bottom: 20px;
+}
+
+/* Formularfeld- und Button-Styling */
+.contact-form-box form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-form-box form input,
+.contact-form-box form textarea,
+.contact-form-box form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form-box form button {
+    width: auto;
+    background-color: #1A68A2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
+}
+
+/* Google Maps Container */
+.map-container {
+    margin-top: 20px;
+    flex-basis: 100%;
+    height: 400px;
+}
+
+/* Abstände zwischen den Boxen entfernen */
+.contact-container::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #1A68A2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+}
+
+footer .logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: #1A68A2;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer .footer-links a:hover {
+    color: #205B82;
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-left .logo {
+        margin: 0 auto;
+        max-height: 70px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Desktop-Version: Anpassungen für die Topbar */
+@media (min-width: 769px) {
+    /* Straße, Telefonnummer, E-Mail korrekt anzeigen */
+    .contact-info {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .contact-info span {
+        display: inline-block;
+        margin-right: 20px;
+        color: white;
+    }
+
+    /* Social Media Icons nach rechts verschieben */
+    .social-media {
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    /* Hamburger-Menü in der Desktop-Version ausblenden */
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Hero Section Desktop (ab 769px Breite) */
+@media (min-width: 769px) {
+    .hero-overlay {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .hero p {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .hero-button {
+        font-size: 1.8rem;
+        padding: 20px 40px;
+        background-color: rgba(37, 99, 235, 0.8);
+        color: #fff;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+
+    .hero-button:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .contact-info span {
+        display: none;
+    }
+    
+    .top-bar .contact-info .icon {
+        margin-right: 10px;
+    }
+
+    .top-bar .contact-info {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .news-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
