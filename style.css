@@ -811,15 +811,16 @@ footer .footer-links a:hover {
         display: flex;
         justify-content: flex-start; /* Kontakt Icons auf der linken Seite */
         gap: 15px;
-        flex: 1; /* Nutzt den Platz auf der linken Seite */
+        flex: 1; /* Nutzt den Platz auf der linken Seite, bleibt unverändert */
     }
 
     .social-media {
         display: flex;
         justify-content: flex-end; /* Social Media Icons auf der rechten Seite */
         gap: 15px;
-        flex: 1; /* Nutzt den Platz auf der rechten Seite */
-        padding-right: 10px; /* Optionaler Abstand rechts */
+        flex: 0; /* Beeinflusst die Kontaktinformationen nicht */
+        margin-left: auto; /* Hält die Social Media Icons am rechten Rand */
+        padding-right: 50px; /* Füge mehr Abstand nach rechts hinzu */
     }
 
     .contact-info .icon, .social-media a img {
