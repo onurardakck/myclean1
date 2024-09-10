@@ -833,3 +833,50 @@ footer .footer-links a:hover {
         cursor: pointer;
     }
 }
+
+/* Mobile Styles - Zentrierung für Logo und Menü */
+@media (max-width: 768px) {
+    /* Top Bar bleibt unverändert */
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Zentrierung des Logos und des Menüs */
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Zentriert das Logo und das Menü */
+        padding-top: 20px; /* Fügt etwas mehr Abstand zwischen der Top Bar und dem Logo hinzu */
+    }
+
+    .header-left .logo {
+        margin-bottom: 10px; /* Fügt Abstand unter dem Logo hinzu */
+        max-width: 150px; /* Größe des Logos anpassen */
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* Menü in die Mitte zentrieren */
+        gap: 15px;
+    }
+
+    /* Zentrierung des gesamten Inhalts */
+    .about-section, .services, .news-section, .contact-section {
+        text-align: center; /* Zentriert den Text innerhalb der Abschnitte */
+        padding: 20px;
+    }
+
+    .about-container, .service-item, .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Zentriert die Inhalte in der Mitte der Seite */
+    }
+
+    .about-text, .service-text, .contact-form-box, .contact-details {
+        text-align: center; /* Texte innerhalb der Boxen zentrieren */
+    }
+}
