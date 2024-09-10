@@ -802,7 +802,7 @@ footer .footer-links a:hover {
 @media (max-width: 768px) {
     .top-bar .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; /* Platzierung der Kontaktinformationen links und Social Media Icons rechts */
         align-items: center;
         padding: 10px;
     }
@@ -811,41 +811,19 @@ footer .footer-links a:hover {
         display: flex;
         justify-content: flex-start; /* Kontakt Icons auf der linken Seite */
         gap: 15px;
+        flex: 1; /* Nutzt den Platz auf der linken Seite */
     }
 
     .social-media {
         display: flex;
         justify-content: flex-end; /* Social Media Icons auf der rechten Seite */
         gap: 15px;
-    }
-
-    .top-bar .contact-info, .top-bar .social-media {
-        flex: 1;
+        flex: 1; /* Nutzt den Platz auf der rechten Seite */
+        padding-right: 20px; /* Optionaler Abstand rechts */
     }
 
     .contact-info .icon, .social-media a img {
         width: 24px;
         height: 24px;
-    }
-}
-
-/* Mobile Anpassungen: Nur für Bildschirme unter 768px */
-@media (max-width: 768px) {
-    .top-bar .container {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .contact-info {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-right: 20px; /* Belasse diesen Abstand wie er ist */
-    }
-
-    .social-media {
-        justify-content: flex-start;
-        margin-left: 100px; /* Weiter nach rechts verschieben, passe den Wert nach Bedarf an */
     }
 }
