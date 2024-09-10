@@ -828,3 +828,23 @@ footer .footer-links a:hover {
         height: 24px;
     }
 }
+
+/* Mobile Anpassungen: Nur für Bildschirme unter 768px */
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: row; /* Kontakt und Social Media nebeneinander in einer Zeile */
+        justify-content: space-between; /* Platzierung der Elemente: Kontakt links, Social Media rechts */
+        align-items: center; /* Zentriere vertikal die Elemente */
+    }
+
+    .contact-info {
+        justify-content: flex-start; /* Kontaktinformationen links */
+        flex-wrap: wrap; /* Falls nötig, werden die Kontakt-Icons bei sehr kleinen Geräten in die nächste Zeile verschoben */
+        gap: 10px; /* Abstand zwischen den Icons */
+    }
+
+    .social-media {
+        justify-content: flex-end; /* Social Media Icons nach rechts */
+        margin-left: auto; /* Abstand zwischen Kontakt und Social Media Icons */
+    }
+}
