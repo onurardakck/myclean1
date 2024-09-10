@@ -841,11 +841,11 @@ footer .footer-links a:hover {
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 10px;
-        margin-right: 20px; /* Abstand zwischen Kontaktinformationen und Social Media Icons */
+        margin-right: 20px; /* Belasse diesen Abstand wie er ist */
     }
 
     .social-media {
         justify-content: flex-start;
-        margin-left: 40px; /* Positive margin, um die Icons weiter nach rechts zu verschieben */
+        margin-left: 80px; /* Weiter nach rechts verschieben, passe den Wert nach Bedarf an */
     }
 }
