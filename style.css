@@ -819,7 +819,7 @@ footer .footer-links a:hover {
         justify-content: flex-end; /* Social Media Icons auf der rechten Seite */
         gap: 15px;
         flex: 1; /* Nutzt den Platz auf der rechten Seite */
-        padding-right: 20px; /* Optionaler Abstand rechts */
+        padding-right: 10px; /* Optionaler Abstand rechts */
     }
 
     .contact-info .icon, .social-media a img {
