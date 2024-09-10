@@ -847,6 +847,6 @@ footer .footer-links a:hover {
 
     .social-media {
         justify-content: flex-start; /* Verschiebt Social Media Icons weiter nach links */
-        margin-left: 20px; /* Fügt einen kleinen Abstand zur linken Seite hinzu, um zentriert zu wirken */
+        margin-left: 10px; /* Fügt einen kleinen Abstand zur linken Seite hinzu, um zentriert zu wirken */
     }
 }
