@@ -829,24 +829,25 @@ footer .footer-links a:hover {
     }
 }
 
-/* Mobile Version: Zentrierung des Logos und des Menüs, mehr Abstand */
+/* Mobile Version: Weitere Zentrierung des Logos und des Menüs, mehr Abstand */
 @media (max-width: 768px) {
     .header-container {
         display: flex;
         justify-content: center; /* Zentriert den gesamten Header-Inhalt */
         align-items: center; /* Vertikale Zentrierung des Logos */
         flex-direction: column; /* Stellt sicher, dass das Logo über dem Menü ist */
-        padding: 20px 0; /* Fügt oben und unten mehr Abstand hinzu */
+        padding: 40px 0; /* Fügt mehr Abstand oben und unten hinzu */
+        margin-left: 20px; /* Verschiebt den gesamten Header-Inhalt etwas nach rechts */
     }
 
     .header-left .logo {
         max-height: 90px; /* Behalte die Höhe des Logos */
         width: auto;
-        margin-bottom: 20px; /* Fügt Abstand unterhalb des Logos hinzu */
+        margin-bottom: 30px; /* Mehr Abstand unter dem Logo */
     }
 
     .header-right nav {
-        margin-top: 10px; /* Optionaler Abstand über dem Menü */
+        margin-top: 15px; /* Optionaler Abstand über dem Menü */
     }
 
     .menu {
@@ -854,12 +855,12 @@ footer .footer-links a:hover {
         display: flex;
         gap: 20px;
         justify-content: center; /* Zentriert das Menü */
-        padding: 10px 0; /* Mehr Abstand unterhalb des Menüs */
+        padding: 20px 0; /* Fügt noch mehr Abstand unterhalb des Menüs hinzu */
     }
 
-    /* Optional: Mehr Abstand zwischen den Menüpunkten */
+    /* Mehr Abstand zwischen den Menüpunkten */
     .menu li a {
-        padding: 10px 15px;
+        padding: 10px 20px;
         text-decoration: none;
         font-size: 1.1rem;
         color: #1A68A2;
@@ -872,6 +873,6 @@ footer .footer-links a:hover {
 
     /* Zusätzlicher Abstand unterhalb des Headers */
     .header {
-        margin-bottom: 30px; /* Fügt mehr Abstand unterhalb des gesamten Headers hinzu */
+        margin-bottom: 40px; /* Fügt noch mehr Abstand unterhalb des gesamten Headers hinzu */
     }
 }
