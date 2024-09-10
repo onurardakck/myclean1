@@ -846,6 +846,6 @@ footer .footer-links a:hover {
 
     .social-media {
         justify-content: flex-start;
-        margin-left: 80px; /* Weiter nach rechts verschieben, passe den Wert nach Bedarf an */
+        margin-left: 100px; /* Weiter nach rechts verschieben, passe den Wert nach Bedarf an */
     }
 }
