@@ -786,3 +786,61 @@ footer .footer-links a:hover {
         margin: 0 auto;
     }
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Top Bar Anpassung */
+    .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Kontakt-Icons links, Social Media Mitte, Hamburger Menü rechts */
+    .contact-info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        justify-content: flex-end;
+    }
+
+    /* Header ausblenden in der mobilen Version */
+    .header-container {
+        display: none;
+    }
+
+    /* Hero-Button bleibt, keine Änderungen */
+    
+    /* "Unsere Aufgabe"-Button zentrieren */
+    .about-button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* News Section zentrieren */
+    .news-content {
+        text-align: center;
+    }
+
+    .news-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Kontakt Boxen links-bündig */
+    .contact-info-left, .contact-info-right {
+        text-align: left;
+    }
+}
