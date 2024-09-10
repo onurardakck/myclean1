@@ -797,3 +797,34 @@ footer .footer-links a:hover {
         margin: 0 auto; /* Zentriert das Bild */
     }
 }
+
+/* Mobile Version: Top-Bar Anpassungen */
+@media (max-width: 768px) {
+    .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: flex-start; /* Kontakt Icons auf der linken Seite */
+        gap: 15px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-end; /* Social Media Icons auf der rechten Seite */
+        gap: 15px;
+    }
+
+    .top-bar .contact-info, .top-bar .social-media {
+        flex: 1;
+    }
+
+    .contact-info .icon, .social-media a img {
+        width: 24px;
+        height: 24px;
+    }
+}
