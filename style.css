@@ -829,47 +829,49 @@ footer .footer-links a:hover {
     }
 }
 
-/* Zentrierung des Logos und des Menüs */
-.header-container {
-    display: flex;
-    justify-content: center; /* Zentriert den gesamten Header-Inhalt */
-    align-items: center; /* Vertikale Zentrierung des Logos */
-    flex-direction: column; /* Stellt sicher, dass das Logo über dem Menü ist */
-    padding: 20px 0; /* Fügt oben und unten mehr Abstand hinzu */
-}
+/* Mobile Version: Zentrierung des Logos und des Menüs, mehr Abstand */
+@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: center; /* Zentriert den gesamten Header-Inhalt */
+        align-items: center; /* Vertikale Zentrierung des Logos */
+        flex-direction: column; /* Stellt sicher, dass das Logo über dem Menü ist */
+        padding: 20px 0; /* Fügt oben und unten mehr Abstand hinzu */
+    }
 
-.header-left .logo {
-    max-height: 90px; /* Behalte die Höhe des Logos */
-    width: auto;
-    margin-bottom: 20px; /* Fügt Abstand unterhalb des Logos hinzu */
-}
+    .header-left .logo {
+        max-height: 90px; /* Behalte die Höhe des Logos */
+        width: auto;
+        margin-bottom: 20px; /* Fügt Abstand unterhalb des Logos hinzu */
+    }
 
-.header-right nav {
-    margin-top: 10px; /* Optionaler Abstand über dem Menü */
-}
+    .header-right nav {
+        margin-top: 10px; /* Optionaler Abstand über dem Menü */
+    }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* Zentriert das Menü */
-    padding: 10px 0; /* Mehr Abstand unterhalb des Menüs */
-}
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center; /* Zentriert das Menü */
+        padding: 10px 0; /* Mehr Abstand unterhalb des Menüs */
+    }
 
-/* Optional: Mehr Abstand zwischen den Menüpunkten */
-.menu li a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #1A68A2;
-}
+    /* Optional: Mehr Abstand zwischen den Menüpunkten */
+    .menu li a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #1A68A2;
+    }
 
-.menu li a:hover {
-    color: #205B82;
-    text-decoration: underline;
-}
+    .menu li a:hover {
+        color: #205B82;
+        text-decoration: underline;
+    }
 
-/* Zusätzlicher Abstand unterhalb des Headers */
-.header {
-    margin-bottom: 30px; /* Fügt mehr Abstand unterhalb des gesamten Headers hinzu */
+    /* Zusätzlicher Abstand unterhalb des Headers */
+    .header {
+        margin-bottom: 30px; /* Fügt mehr Abstand unterhalb des gesamten Headers hinzu */
+    }
 }
