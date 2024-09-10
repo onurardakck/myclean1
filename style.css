@@ -829,38 +829,31 @@ footer .footer-links a:hover {
     }
 }
 
-/* Mobile Version: Weitere Zentrierung des Logos und des Menüs, mehr Abstand */
+/* Mobile Version: Mehr Abstand über und unter dem Logo */
 @media (max-width: 768px) {
     .header-container {
         display: flex;
-        justify-content: center; /* Zentriert den gesamten Header-Inhalt */
-        align-items: center; /* Vertikale Zentrierung des Logos */
-        flex-direction: column; /* Stellt sicher, dass das Logo über dem Menü ist */
-        padding: 40px 0; /* Fügt mehr Abstand oben und unten hinzu */
-        margin-left: 20px; /* Verschiebt den gesamten Header-Inhalt etwas nach rechts */
+        justify-content: center; /* Zentriert den Header-Inhalt */
+        align-items: center;
+        flex-direction: column;
+        padding-top: 30px; /* Mehr Abstand nach oben (zwischen Top Bar und Logo) */
+        padding-bottom: 30px; /* Mehr Abstand nach unten (zwischen Menü und dem nächsten Abschnitt) */
     }
 
     .header-left .logo {
         max-height: 90px; /* Behalte die Höhe des Logos */
         width: auto;
-        margin-bottom: 30px; /* Mehr Abstand unter dem Logo */
-    }
-
-    .header-right nav {
-        margin-top: 15px; /* Optionaler Abstand über dem Menü */
     }
 
     .menu {
         list-style: none;
         display: flex;
         gap: 20px;
-        justify-content: center; /* Zentriert das Menü */
-        padding: 20px 0; /* Fügt noch mehr Abstand unterhalb des Menüs hinzu */
+        justify-content: center;
     }
 
-    /* Mehr Abstand zwischen den Menüpunkten */
     .menu li a {
-        padding: 10px 20px;
+        padding: 10px 15px;
         text-decoration: none;
         font-size: 1.1rem;
         color: #1A68A2;
@@ -871,8 +864,8 @@ footer .footer-links a:hover {
         text-decoration: underline;
     }
 
-    /* Zusätzlicher Abstand unterhalb des Headers */
+    /* Zusätzlicher Abstand unterhalb des Headers (zwischen Menü und Hero Section) */
     .header {
-        margin-bottom: 40px; /* Fügt noch mehr Abstand unterhalb des gesamten Headers hinzu */
+        margin-bottom: 40px; /* Fügt mehr Abstand unterhalb des gesamten Headers hinzu */
     }
 }
