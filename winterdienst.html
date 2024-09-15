@@ -24,15 +24,12 @@
                     <img src="mail.png" alt="Mail" class="icon">
                     <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
                     <img src="anruf.png" alt="Anruf" class="icon">
-                    <!-- Call-to-Action für die Telefonnummer -->
                     <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
                 </div>
                 <div class="social-media">
-                    <!-- Instagram-Link hinzufügen -->
                     <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
                         <img src="Instagram.png" alt="Instagram" class="icon">
                     </a>
-                    <!-- LinkedIn-Link hinzufügen -->
                     <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
                         <img src="linkedin.png" alt="LinkedIn" class="icon">
                     </a>
@@ -63,8 +60,6 @@
                         </li>
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
-                    <!-- Hamburger-Menü für mobile Geräte -->
-                    <div class="menu-toggle">☰</div>
                 </nav>
             </div>
         </div>
@@ -91,39 +86,6 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mobileNav = document.getElementById('mobile-nav');
-            const mobileMenuItems = document.querySelectorAll('.mobile-menu > li');
-
-            // Öffnen und Schließen des Hamburger-Menüs
-            menuToggle.addEventListener('click', function() {
-                mobileNav.classList.toggle('show');
-            });
-
-            // Funktion, um das Untermenü zu öffnen und zu schließen
-            mobileMenuItems.forEach(function(item) {
-                item.addEventListener('click', function(event) {
-                    const submenu = item.querySelector('.submenu');
-                    
-                    // Überprüfen, ob das Menüelement ein Untermenü hat
-                    if (submenu) {
-                        event.preventDefault();
-                        item.classList.toggle('open'); // Untermenü öffnen
-                    }
-                });
-            });
-
-            // Funktion, um das Menü zu schließen, wenn außerhalb geklickt wird
-            mobileNav.addEventListener('click', function(event) {
-                if (event.target === mobileNav) {
-                    mobileNav.classList.remove('show'); // Menü schließen
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
@@ -166,7 +128,7 @@
             <div class="contact-info">
                 <div class="contact-info-left">
                     <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
-                    <p><strong>Telefon:</strong> +49 152 17782301</p>
+                    <p><strong>Telefon:</strong>+49 152 17782301</p>
                     <p><strong>E-Mail:</strong> info@myclean-service.de</p>
                 </div>
                 <div class="contact-info-right">
