@@ -7,172 +7,198 @@
     <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
     <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
     <meta name="author" content="MyClean-Service">
-    <title>MyClean-Service - Datenschutzerklärung</title>
+    <title>MyClean-Service</title>
     <!-- Google Fonts - Arimo -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <img src="standort.png" alt="Standort" class="icon">
+                    <span>Wollankstr 61c, 13359 Berlin</span>
+                    <img src="mail.png" alt="Mail" class="icon">
+                    <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
+                    <img src="anruf.png" alt="Anruf" class="icon">
+                    <!-- Call-to-Action für die Telefonnummer -->
+                    <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
+                </div>
+                <div class="social-media">
+                    <!-- Instagram-Link hinzufügen -->
+                    <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
+                        <img src="Instagram.png" alt="Instagram" class="icon">
+                    </a>
+                    <!-- LinkedIn-Link hinzufügen -->
+                    <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="mycleanlogo.png" alt="Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <!-- Desktop-Menü -->
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Leistungen</a>
+                            <ul class="submenu">
+                                <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
+                                <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
+                                <li><a href="baureinigung.html">Baureinigung</a></li>
+                                <li><a href="grundreinigung.html">Grundreinigung</a></li>
+                                <li><a href="bueroreinigung.html">Büroreinigung</a></li>
+                                <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
+                                <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
+                                <li><a href="winterdienst.html">Winterdienst</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                    <!-- Hamburger-Menü für mobile Geräte -->
+                    <div class="menu-toggle">☰</div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<!-- Header -->
-<header class="header">
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <img src="standort.png" alt="Standort" class="icon">
-                <span>Wollankstr 61c, 13359 Berlin</span>
-                <img src="mail.png" alt="Mail" class="icon">
-                <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
-                <img src="anruf.png" alt="Anruf" class="icon">
-                <span>+49 152 17782301</span>
-            </div>
-            <div class="social-media">
-                <a href="#"><img src="Facebook.png" alt="Facebook" class="icon"></a>
-                <a href="#"><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
-            </div>
-        </div>
-    </div>
-    <div class="header-container">
-        <div class="header-left">
-            <img src="mycleanlogo.png" alt="Logo" class="logo">
-        </div>
-        <div class="header-right">
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über uns</a></li>
-                    <li><a href="services.html">Leistungen</a>
-                        <ul class="submenu">
-                            <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
-                            <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
-                            <li><a href="baureinigung.html">Baureinigung</a></li>
-                            <li><a href="grundreinigung.html">Grundreinigung</a></li>
-                            <li><a href="bueroreinigung.html">Büroreinigung</a></li>
-                            <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
-                            <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
-                            <li><a href="winterdienst.html">Winterdienst</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Kontakt</a></li>
+    <!-- Mobile Navigationsmenü -->
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="#">Leistungen</a>
+                <ul class="submenu">
+                    <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
+                    <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
+                    <li><a href="baureinigung.html">Baureinigung</a></li>
+                    <li><a href="grundreinigung.html">Grundreinigung</a></li>
+                    <li><a href="bueroreinigung.html">Büroreinigung</a></li>
+                    <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
+                    <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
+                    <li><a href="winterdienst.html">Winterdienst</a></li>
                 </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+            </li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-    <video autoplay muted playsinline class="hero-video" id="heroVideo">
-        <source src="reinigung.mp4" type="video/mp4">
-        Ihr Browser unterstützt keine Videos.
-    </video>
-    <div class="hero-overlay"></div>
-</section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            const mobileMenuItems = document.querySelectorAll('.mobile-menu > li');
 
-<!-- Datenschutzerklärung Section -->
-<section class="datenschutz-container">
-    <h1>Datenschutzerklärung</h1>
-    <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profil auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).</p>
-    
-    <h2>Verantwortlicher</h2>
-    <p>MyClean-Service<br>
-    Wollankstr 61c, 13359 Berlin<br>
-    E-Mail: info@myclean-service.de</p>
+            // Öffnen und Schließen des Hamburger-Menüs
+            menuToggle.addEventListener('click', function() {
+                mobileNav.classList.toggle('show');
+            });
 
-    <h2>Arten der verarbeiteten Daten</h2>
-    <p>Zu den verarbeiteten Daten gehören:</p>
-    <p>Bestandsdaten (z.B., Namen, Adressen).</p>
-    <p>Kontaktdaten (z.B., E-Mail, Telefonnummern).</p>
-    <p>Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).</p>
-    <p>Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).</p>
-    <p>Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).</p>
+            // Funktion, um das Untermenü zu öffnen und zu schließen
+            mobileMenuItems.forEach(function(item) {
+                item.addEventListener('click', function(event) {
+                    const submenu = item.querySelector('.submenu');
+                    
+                    // Überprüfen, ob das Menüelement ein Untermenü hat
+                    if (submenu) {
+                        event.preventDefault();
+                        item.classList.toggle('open'); // Untermenü öffnen
+                    }
+                });
+            });
 
-    <h2>Zweck der Verarbeitung</h2>
-    <p>Der Zweck der Verarbeitung umfasst unter anderem:</p>
-    <p>Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.</p>
-    <p>Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.</p>
-    <p>Sicherheitsmaßnahmen.</p>
-    <p>Reichweitenmessung/Marketing.</p>
-</section>
+            // Funktion, um das Menü zu schließen, wenn außerhalb geklickt wird
+            mobileNav.addEventListener('click', function(event) {
+                if (event.target === mobileNav) {
+                    mobileNav.classList.remove('show'); // Menü schließen
+                }
+            });
+        });
+    </script>
 
-<!-- Kontakt Section -->
-<section class="contact-section">
-    <div class="contact-container">
-        <div class="contact-form-box">
-            <h2>Kontaktieren Sie uns</h2>
-            <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Ihr Name" required>
-                <input type="email" name="email" placeholder="Ihre E-Mail" required>
-                <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
-                <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-                <div class="consent-container">
-                    <input type="checkbox" name="privacy" required>
-                    <label>Ich habe die Datenschutzerklärung gelesen und willige ein.</label>
-                </div>
-                <button type="submit">Nachricht senden</button>
-            </form>
-        </div>
-        <div class="contact-details">
-            <div class="contact-info">
-                <div class="contact-info-left">
-                    <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
-                    <p><strong>Telefon:</strong>+49 152 17782301</p>
-                    <p><strong>E-Mail:</strong> info@myclean-service.de</p>
-                </div>
-                <div class="contact-info-right">
-                    <p><strong>Öffnungszeiten:</strong><br>Mo - Fr: 8:00 - 18:00<br>Sa: 9:00 - 14:00</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="bürozimmer5.png" alt="Hero Image" class="hero-image" id="heroImage">
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Baureinigung Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="baureinigung.png" alt="Baureinigung">
             </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="about-text">
+                <h2>Baureinigung</h2>
+                <p>Unsere Baureinigungsdienste umfassen die Zwischenreinigung während der Bauarbeiten sowie die gründliche Bauendreinigung nach Abschluss der Arbeiten. Wir stellen sicher, dass Ihre Baustelle oder Ihr Neubau in einem makellosen Zustand übergeben wird.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <img src="mycleanlogo.png" alt="Logo" class="logo">
-        <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
-        <div class="footer-links">
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
+    <!-- Kontakt Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-form-box">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
+                <form action="send_mail.php" method="post">
+                    <input type="text" name="name" placeholder="Ihr Name" required>
+                    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+                    <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
+                    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                    <button type="submit">Nachricht senden</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <div class="contact-info-left">
+                        <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
+                        <p><strong>Telefon:</strong> +49 152 17782301</p>
+                        <p><strong>E-Mail:</strong> info@myclean-service.de</p>
+                    </div>
+                    <div class="contact-info-right">
+                        <p><strong>Öffnungszeiten:</strong><br>Mo - Fr: 8:00 - 18:00<br>Sa: 9:00 - 14:00</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="gray-space"></div>
-</footer>
+    </section>
 
-<!-- JavaScript für das Hamburger-Menü -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const closeBtn = document.querySelector('.close-btn');
-        const submenu = document.querySelector('.has-submenu');
-        const submenuList = submenu.querySelector('.submenu');
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="mycleanlogo.png" alt="Logo" class="logo">
+            <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+        <div class="gray-space"></div>
+    </footer>
 
-        menuToggle.addEventListener('click', function() {
-            mobileNav.classList.toggle('show');
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('show');
+            });
         });
-
-        closeBtn.addEventListener('click', function() {
-            mobileNav.classList.remove('show');
-        });
-
-        submenu.addEventListener('click', function() {
-            submenuList.classList.toggle('show');
-        });
-
-        mobileNav.addEventListener('click', function(event) {
-            if (!submenu.contains(event.target)) {
-                submenuList.classList.remove('show');
-            }
-        });
-    });
-</script>
-
+    </script>
 </body>
+
 </html>
