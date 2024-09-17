@@ -7,127 +7,80 @@
     <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
     <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
     <meta name="author" content="MyClean-Service">
-    <title>MyClean-Service</title>
+    <title>MyClean-Service - Über uns</title>
     <!-- Google Fonts - Arimo -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="contact-info">
+
+<!-- Header -->
+<header class="header">
+    <!-- Oberer Teil mit Kontaktinformationen -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="https://www.google.com/maps?q=Wollankstr+61c,+13359+Berlin" target="_blank">
                     <img src="standort.png" alt="Standort" class="icon">
-                    <span>Wollankstr 61c, 13359 Berlin</span>
+                </a>
+                <span>Wollankstr 61c, 13359 Berlin</span>
+
+                <a href="mailto:info@myclean-service.de">
                     <img src="mail.png" alt="Mail" class="icon">
-                    <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
+                </a>
+                <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
+
+                <a href="tel:+4915217782301">
                     <img src="anruf.png" alt="Anruf" class="icon">
-                    <!-- Call-to-Action für die Telefonnummer -->
-                    <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
-                </div>
-                <div class="social-media">
-                    <!-- Instagram-Link hinzufügen -->
-                    <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
-                        <img src="Instagram.png" alt="Instagram" class="icon">
-                    </a>
-                    <!-- LinkedIn-Link hinzufügen -->
-                    <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn" class="icon">
-                    </a>
-                </div>
+                </a>
+                <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
+            </div>
+
+            <!-- Mitte: Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
+                    <img src="Instagram.png" alt="Instagram" class="icon">
+                </a>
+
+                <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="icon">
+                </a>
             </div>
         </div>
-        <div class="header-container">
-            <div class="header-left">
+    </div>
+
+    <!-- Unterer Teil mit Logo und Navigation -->
+    <div class="header-container">
+        <div class="header-left">
+            <a href="index.html">
                 <img src="mycleanlogo.png" alt="Logo" class="logo">
-            </div>
-            <div class="header-right">
-                <nav>
-                    <!-- Desktop-Menü -->
-                    <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Über uns</a></li>
-                        <li><a href="services.html">Leistungen</a>
-                            <ul class="submenu">
-                                <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
-                                <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
-                                <li><a href="baureinigung.html">Baureinigung</a></li>
-                                <li><a href="grundreinigung.html">Grundreinigung</a></li>
-                                <li><a href="bueroreinigung.html">Büroreinigung</a></li>
-                                <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
-                                <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
-                                <li><a href="winterdienst.html">Winterdienst</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
-                    <!-- Hamburger-Menü für mobile Geräte -->
-                    <div class="menu-toggle">☰</div>
-                </nav>
-            </div>
+            </a>
         </div>
-    </header>
-
-    <!-- Mobile Navigationsmenü -->
-    <nav id="mobile-nav" class="mobile-nav">
-        <div class="close-btn" onclick="closeMenu()">✖</div>
-        <ul class="mobile-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
-            <li><a href="#">Leistungen</a>
-                <ul class="submenu">
-                    <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
-                    <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
-                    <li><a href="baureinigung.html">Baureinigung</a></li>
-                    <li><a href="grundreinigung.html">Grundreinigung</a></li>
-                    <li><a href="bueroreinigung.html">Büroreinigung</a></li>
-                    <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
-                    <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
-                    <li><a href="winterdienst.html">Winterdienst</a></li>
+        <div class="header-right">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a>
+                        <ul class="submenu">
+                            <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
+                            <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
+                            <li><a href="baureinigung.html">Baureinigung</a></li>
+                            <li><a href="grundreinigung.html">Grundreinigung</a></li>
+                            <li><a href="bueroreinigung.html">Büroreinigung</a></li>
+                            <li><a href="praxisreinigung.html">Praxisreinigung</a></li>
+                            <li><a href="sperrmuellentsorgung.html">Sperrmüllentsorgung</a></li>
+                            <li><a href="winterdienst.html">Winterdienst</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Kontakt</a></li>
                 </ul>
-            </li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mobileNav = document.getElementById('mobile-nav');
-            const mobileMenuItems = document.querySelectorAll('.mobile-menu > li');
-
-            // Öffnen und Schließen des Hamburger-Menüs
-            menuToggle.addEventListener('click', function() {
-                mobileNav.classList.toggle('show');
-            });
-
-            // Funktion, um das Untermenü zu öffnen und zu schließen
-            mobileMenuItems.forEach(function(item) {
-                item.addEventListener('click', function(event) {
-                    const submenu = item.querySelector('.submenu');
-                    
-                    // Überprüfen, ob das Menüelement ein Untermenü hat
-                    if (submenu) {
-                        event.preventDefault();
-                        item.classList.toggle('open'); // Untermenü öffnen
-                    }
-                });
-            });
-
-            // Funktion, um das Menü zu schließen, wenn außerhalb geklickt wird
-            mobileNav.addEventListener('click', function(event) {
-                if (event.target === mobileNav) {
-                    mobileNav.classList.remove('show'); // Menü schließen
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>
-
+            </nav>
+        </div>
+    </div>
+</header>
+    
 <!-- Hero Section -->
 <section class="hero">
     <img src="bürozimmer4.png" alt="Hero Image" class="hero-image" id="heroImage">
@@ -166,7 +119,7 @@
             <div class="contact-info">
                 <div class="contact-info-left">
                     <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
-                    <p><strong>Telefon:</strong> +49 152 17782301</p>
+                    <p><strong>Telefon:</strong>+49 152 17782301</p>
                     <p><strong>E-Mail:</strong> info@myclean-service.de</p>
                 </div>
                 <div class="contact-info-right">

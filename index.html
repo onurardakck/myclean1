@@ -7,7 +7,7 @@
     <meta name="description" content="Unternehmenswebsite, die moderne Standards erfüllt">
     <meta name="keywords" content="Unternehmen, Dienstleistungen, Reinigung">
     <meta name="author" content="MyClean-Service">
-    <title>MyClean-Service</title>
+    <title>MyClean-Service - Über uns</title>
     <!-- Google Fonts - Arimo -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
@@ -15,80 +15,47 @@
 
 <body>
 
-<<<<<<< HEAD
-    <!-- Header -->
-    <header class="header">
-        <!-- Top-Bar Section -->
-        <section class="top-bar">
-            <div class="container">
-                <!-- Linke Seite: Icons (Standort, Anruf, Mail) -->
-                <div class="contact-info">
-                    <img src="standort.png" alt="Standort" class="icon">
-                    <img src="anruf.png" alt="Anruf" class="icon">
-                    <img src="mail.png" alt="Mail" class="icon">
-                </div>
-
-=======
 <!-- Header -->
 <header class="header">
     <!-- Oberer Teil mit Kontaktinformationen -->
     <div class="top-bar">
         <div class="container">
             <div class="contact-info">
-                <img src="standort.png" alt="Standort" class="icon">
+                <a href="https://www.google.com/maps?q=Wollankstr+61c,+13359+Berlin" target="_blank">
+                    <img src="standort.png" alt="Standort" class="icon">
+                </a>
                 <span>Wollankstr 61c, 13359 Berlin</span>
-                <img src="mail.png" alt="Mail" class="icon">
+
+                <a href="mailto:info@myclean-service.de">
+                    <img src="mail.png" alt="Mail" class="icon">
+                </a>
                 <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
-                <img src="anruf.png" alt="Anruf" class="icon">
-                <span>+49 152 17782301</span>
+
+                <a href="tel:+4915217782301">
+                    <img src="anruf.png" alt="Anruf" class="icon">
+                </a>
+                <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
             </div>
->>>>>>> 0e4d94d (Updated index.html and style.css)
-                <!-- Mitte: Social Media Icons -->
-                <div class="social-media">
-                    <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
-                        <img src="Instagram.png" alt="Instagram" class="icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn" class="icon">
-                    </a>
-                </div>
-<<<<<<< HEAD
 
-                <!-- Rechte Seite: Hamburger-Menü -->
-                <div class="menu-toggle">☰</div>
+            <!-- Mitte: Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
+                    <img src="Instagram.png" alt="Instagram" class="icon">
+                </a>
+
+                <a href="https://www.linkedin.com/in/aldan-sabotic-863881326/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="icon">
+                </a>
             </div>
-        </section>
-
-        <!-- Mobile Navigation -->
-        <nav id="mobile-nav" class="mobile-nav">
-            <div class="close-btn">✖</div>
-            <ul class="mobile-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Über uns</a></li>
-                <li class="has-submenu">
-                    <a href="#">Leistungen ▼</a>
-                    <ul class="submenu">
-                        <li><a href="gebaeudereinigung.html">Gebäudereinigung</a></li>
-                        <li><a href="fensterreinigung.html">Fensterreinigung</a></li>
-                        <li><a href="baureinigung.html">Baureinigung</a></li>
-                        <li><a href="grundreinigung.html">Grundreinigung</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-  <!-- Hero Section -->
-<!-- Hero Section mit Slogan und Button -->
-=======
         </div>
     </div>
 
     <!-- Unterer Teil mit Logo und Navigation -->
     <div class="header-container">
         <div class="header-left">
-            <img src="mycleanlogo.png" alt="Logo" class="logo">
+            <a href="index.html">
+                <img src="mycleanlogo.png" alt="Logo" class="logo">
+            </a>
         </div>
         <div class="header-right">
             <nav>
@@ -115,7 +82,6 @@
 </header>
 
 <!-- Hero Section -->
->>>>>>> 0e4d94d (Updated index.html and style.css)
 <section class="hero">
     <video autoplay muted playsinline class="hero-video" id="heroVideo">
         <source src="reinigung.mp4" type="video/mp4">
@@ -123,60 +89,29 @@
     </video>
     <div class="hero-overlay">
         <div class="hero-content">
-<<<<<<< HEAD
-            <h1>Mit uns glänzen</h1>
-=======
             <h1>Mit uns glänzen!</h1>
->>>>>>> 0e4d94d (Updated index.html and style.css)
             <p>Gebäudereinigung - Grundreinigung - Baureinigung</p>
             <a href="contact.html" class="hero-button">Sprich mit uns</a>
         </div>
     </div>
 </section>
 
-<<<<<<< HEAD
-<!-- JavaScript für die Hero-Section -->
-<script>
-    const video = document.getElementById('heroVideo');
-    video.removeAttribute('controls'); // Entfernt die Steuerelemente
-    video.addEventListener('ended', function() {
-        video.pause(); // Hält das Video an, wenn es das Ende erreicht
-        video.currentTime = video.duration; // Setzt das Video auf das letzte Bild
-    });
-</script>
-
-   <!-- Über uns Section -->
-=======
 <!-- Über uns Section -->
->>>>>>> 0e4d94d (Updated index.html and style.css)
 <section class="about-section">
-    <div class="about-text">
-        <h2>Unsere Aufgabe</h2>
-        <p>
-            Von unserem ersten Treffen bis zum Abschluss Ihres Projekts ist es unser Versprechen und Ziel,
-            die Bedürfnisse und Erwartungen unserer Kunden zu erfüllen.
-        </p>
-        <a href="about.html" class="about-button">Über Uns</a>
-    </div>
-    <div class="about-image">
-        <img src="reinigung1.png" alt="Unsere Aufgabe">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="reinigung1.png" alt="Unsere Aufgabe">
+        </div>
+        <div class="about-text">
+            <h2>Unsere Aufgabe</h2>
+            <p>
+                Von unserem ersten Treffen bis zum Abschluss Ihres Projekts ist es unser Versprechen und Ziel, die Bedürfnisse und Erwartungen unserer Kunden zu erfüllen.
+            </p>
+            <a href="about.html" class="about-button">Über Uns</a>
+        </div>
     </div>
 </section>
 
-<<<<<<< HEAD
-    <!-- Services Section -->
-    <section class="services">
-        <div class="service-item">
-            <div class="service-image">
-                <a href="gebaeudereinigung.html">
-                    <img src="1.png" alt="Gebäudereinigung">
-                </a>
-            </div>
-            <div class="service-text">
-                <h3><a href="gebaeudereinigung.html">Gebäudereinigung</a></h3>
-                <p>Umfassende Reinigungsdienste für Ihr Gebäude, angepasst an Ihre Bedürfnisse.</p>
-            </div>
-=======
 <!-- Services Section -->
 <section class="services">
     <div class="service-item">
@@ -184,31 +119,11 @@
             <a href="gebaeudereinigung.html">
                 <img src="1.png" alt="Gebäudereinigung">
             </a>
->>>>>>> 0e4d94d (Updated index.html and style.css)
         </div>
-        <div class="service-item">
-            <div class="service-image">
-                <a href="fensterreinigung.html">
-                    <img src="2.png" alt="Fensterreinigung">
-                </a>
-            </div>
-            <div class="service-text">
-                <h3><a href="fensterreinigung.html">Fensterreinigung</a></h3>
-                <p>Streifenfreie Fensterreinigung für einen klaren Durchblick.</p>
-            </div>
+        <div class="service-text">
+            <h3><a href="gebaeudereinigung.html">Gebäudereinigung</a></h3>
+            <p>Umfassende Reinigungsdienste für Ihr Gebäude, angepasst an Ihre Bedürfnisse.</p>
         </div>
-<<<<<<< HEAD
-        <div class="service-item">
-            <div class="service-image">
-                <a href="baureinigung.html">
-                    <img src="3.png" alt="Baureinigung">
-                </a>
-            </div>
-            <div class="service-text">
-                <h3><a href="baureinigung.html">Baureinigung</a></h3>
-                <p>Baureinigung, Bauendreinigung und Zwischenreinigung für Ihre Baustellen.</p>
-            </div>
-=======
     </div>
     
     <div class="service-item">
@@ -216,22 +131,11 @@
             <a href="fensterreinigung.html">
                 <img src="2.png" alt="Fensterreinigung">
             </a>
->>>>>>> 0e4d94d (Updated index.html and style.css)
         </div>
-        <div class="service-item">
-            <div class="service-image">
-                <a href="grundreinigung.html">
-                    <img src="4.png" alt="Grundreinigung">
-                </a>
-            </div>
-            <div class="service-text">
-                <h3><a href="grundreinigung.html">Grundreinigung</a></h3>
-                <p>Tiefenreinigung für Ihre Räumlichkeiten, um den höchsten Standard zu gewährleisten.</p>
-            </div>
+        <div class="service-text">
+            <h3><a href="fensterreinigung.html">Fensterreinigung</a></h3>
+            <p>Streifenfreie Fensterreinigung für einen klaren Durchblick.</p>
         </div>
-<<<<<<< HEAD
-    </section>
-=======
     </div>
     
     <div class="service-item">
@@ -282,14 +186,13 @@
         </div>
     </div>
 </section>
->>>>>>> 0e4d94d (Updated index.html and style.css)
 
-    <!-- News Section -->
+<!-- News Section -->
 <section class="news-section">
     <div class="news-item">
         <div class="news-content">
             <h3>Sperrmüllentsorgung und Winterdienst</h3>
-            <p>Wir freuen uns, Ihnen mitzuteilen, dass wir ab sofort auch die Sperrmüllentsorgung und den Winterdienst anbieten.</p>
+            <p>Wir freuen uns, Ihnen mitteilen zu können, dass wir ab sofort auch die Sperrmüllentsorgung und den Winterdienst anbieten. Damit erweitern wir unser Serviceportfolio und können noch besser auf Ihre Bedürfnisse eingehen.</p>
             <a href="#" class="read-more">Mehr lesen</a>
         </div>
         <div class="news-image">
@@ -298,16 +201,13 @@
     </div>
 </section>
 
-<<<<<<< HEAD
-    <!-- Kontakt Section -->
-=======
 
 <!-- Kontakt Section -->
->>>>>>> 0e4d94d (Updated index.html and style.css)
 <section class="contact-section">
     <div class="contact-container">
         <div class="contact-form-box">
             <h2>Kontaktieren Sie uns</h2>
+            <p>Wir sind für Sie da! Schreiben Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.</p>
             <form action="send_mail.php" method="post">
                 <input type="text" name="name" placeholder="Ihr Name" required>
                 <input type="email" name="email" placeholder="Ihre E-Mail" required>
@@ -317,67 +217,32 @@
             </form>
         </div>
         <div class="contact-details">
-            <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
-            <p><strong>Telefon:</strong> +49 152 17782301</p>
-            <p><strong>E-Mail:</strong> info@myclean-service.de</p>
-
-            <!-- Google Maps Karte -->
-            <div class="map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.653208234572!2d13.386220815946195!3d52.5534904798124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85198fdc3b5bb%3A0xd6d9387466a5f87b!2sWollankstra%C3%9Fe%2061C%2C%2013359%20Berlin%2C%20Deutschland!5e0!3m2!1sde!2sde!4v1630950041993!5m2!1sde!2sde"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            <div class="contact-info">
+                <div class="contact-info-left">
+                    <p><strong>Adresse:</strong> Wollankstr 61c, 13359 Berlin</p>
+                    <p><strong>Telefon:</strong> +49 152 17782301</p>
+                    <p><strong>E-Mail:</strong> info@myclean-service.de</p>
+                </div>
+                <div class="contact-info-right">
+                    <p><strong>Öffnungszeiten:</strong><br>Mo - Fr: 8:00 - 18:00<br>Sa: 9:00 - 14:00</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9422213987584!2d13.359499315795142!3d52.5595707798174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851be6fb81e23%3A0x75fdfdc5a8ec2bdb!2sWollankstr%2061c,%2013359%20Berlin!5e0!3m2!1sen!2sde!4v1636636267430!5m2!1sen!2sde" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="mycleanlogo.png" alt="Logo" class="logo">
-            <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
-            <div class="footer-links">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <img src="mycleanlogo.png" alt="Logo" class="logo">
+        <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
         </div>
-<<<<<<< HEAD
-    </footer>
-
-    <!-- JavaScript für das Hamburger-Menü -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mobileNav = document.querySelector('.mobile-nav');
-            const closeBtn = document.querySelector('.close-btn');
-            const submenu = document.querySelector('.has-submenu');
-            const submenuList = submenu.querySelector('.submenu');
-
-            // Öffnen des Menüs beim Klicken auf das Hamburger-Menü
-            menuToggle.addEventListener('click', function() {
-                mobileNav.classList.toggle('show');
-            });
-
-            // Schließen des Menüs beim Klicken auf den Schließen-Button
-            closeBtn.addEventListener('click', function() {
-                mobileNav.classList.remove('show');
-            });
-
-            // Öffnen und Schließen des Untermenüs
-            submenu.addEventListener('click', function() {
-                submenuList.classList.toggle('show');
-            });
-
-            // Schließen des Untermenüs beim Klicken außerhalb
-            mobileNav.addEventListener('click', function(event) {
-                if (!submenu.contains(event.target)) {
-                    submenuList.classList.remove('show');
-                }
-            });
-        });
-    </script>
-=======
     </div>
 </footer>
 
@@ -458,7 +323,5 @@
     }
 </style>
 
->>>>>>> 0e4d94d (Updated index.html and style.css)
 </body>
-
 </html>
