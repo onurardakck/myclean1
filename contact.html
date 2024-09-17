@@ -21,23 +21,26 @@
     <div class="top-bar">
         <div class="container">
             <div class="contact-info">
+                <!-- Standort-Icon -->
                 <a href="https://www.google.com/maps?q=Wollankstr+61c,+13359+Berlin" target="_blank">
                     <img src="standort.png" alt="Standort" class="icon">
                 </a>
                 <span>Wollankstr 61c, 13359 Berlin</span>
 
+                <!-- E-Mail-Icon -->
                 <a href="mailto:info@myclean-service.de">
                     <img src="mail.png" alt="Mail" class="icon">
                 </a>
                 <span><a href="mailto:info@myclean-service.de" class="contact-link">info@myclean-service.de</a></span>
 
+                <!-- Telefon-Icon -->
                 <a href="tel:+4915217782301">
                     <img src="anruf.png" alt="Anruf" class="icon">
                 </a>
                 <span><a href="tel:+4915217782301" class="contact-link">+49 152 17782301</a></span>
             </div>
 
-            <!-- Mitte: Social Media Icons -->
+            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.instagram.com/myclean_service/?igsh=NjVndnE3ZXphOWsy" target="_blank">
                     <img src="Instagram.png" alt="Instagram" class="icon">
@@ -80,7 +83,7 @@
         </div>
     </div>
 </header>
-    
+
 <!-- Hero Section -->
 <section class="hero">
     <img src="bürozimmer4.png" alt="Hero Image" class="hero-image" id="heroImage">
@@ -99,19 +102,19 @@
                 <input type="email" name="email" placeholder="Ihre E-Mail" required>
                 <input type="tel" name="phone" placeholder="Ihre Telefonnummer" required>
                 
-                <!-- Neues Feld: Quadratmeter -->
+                <!-- Quadratmeter -->
                 <input type="text" name="square_meters" placeholder="Quadratmeter" required>
 
-                <!-- Neues Feld: Objektart (als Textfeld) -->
+                <!-- Objektart -->
                 <input type="text" name="object_type" placeholder="Objektart" required>
 
-                <!-- Neues Feld: Häufigkeit der Reinigung (als Textfeld) -->
+                <!-- Häufigkeit der Reinigung -->
                 <input type="text" name="cleaning_frequency" placeholder="Häufigkeit der Reinigung" required>
 
-                <!-- Optionales Feld: Preisvorstellung -->
+                <!-- Preisvorstellung (optional) -->
                 <input type="text" name="price_expectation" placeholder="Preisvorstellung (optional)">
 
-                <!-- Optionales Feld: Besondere Anforderungen -->
+                <!-- Besondere Anforderungen (optional) -->
                 <textarea name="special_requirements" rows="3" placeholder="Besondere Anforderungen (optional)"></textarea>
 
                 <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
@@ -136,29 +139,29 @@
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="mycleanlogo.png" alt="Logo" class="logo">
-            <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
-            <div class="footer-links">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <img src="mycleanlogo.png" alt="Logo" class="logo">
+        <p>© 2024 MyClean-Service. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
         </div>
-        <div class="gray-space"></div>
-    </footer>
+    </div>
+    <div class="gray-space"></div>
+</footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('.menu');
+<!-- JavaScript für das Menü -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
 
-            menuToggle.addEventListener('click', function() {
-                menu.classList.toggle('show');
-            });
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('show');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
-
